@@ -156,7 +156,7 @@ htmlhelp_basename = 'DocsErpya'
 
 # -- Options for LaTeX output ------------------------------------------------
 
-latex_elements = {
+#latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
@@ -172,7 +172,7 @@ latex_elements = {
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
-}
+#}
 
 
 locale_dirs = ['locale/']
