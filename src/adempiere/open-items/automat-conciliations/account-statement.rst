@@ -16,8 +16,6 @@
 .. |Acercar Otro tipo de Pagos| image:: resources/Otro_t_pago_Acercar.png
 .. |Pago/Cobro Otro tipo de Pagos| image:: resources/Otro_t_pago_Ventana_Pago-Cobro.png
 .. |Movimientos Bancarios Pagos sin Identificar| image:: resources/movimientos_No_Conciliados.png
-.. |Selección Pago sin Identificar| image:: resources/Selección_CobrosinIdentificar.png
-.. |Pago Cobro sin Identificar| image:: resources/Tipo_Transacción_Pago_sin_Identificar.png
 .. |OK Pago Cobro sin Identificar| image:: resources/Pagos_sin_Identificar_OK.png
 .. |Descripción Pago Cobro sin Identificar| image:: resources/Pagos_sin_Identificar_Descripcion.png
 .. |Campo Pago Cobro sin Identificar| image:: resources/Pagos_sin_Identificar_Pago.png
