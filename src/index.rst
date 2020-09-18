@@ -10,7 +10,7 @@ Le invitamos a descubrir cómo hacer su día a día más sencillo con el uso de 
 
 .. toctree::
     :caption: DOCUMENTACIÓN ESTÁNDAR
-    :maxdepth: 2
+    :maxlistdepth:
     :numbered:
 
     general/standard-procedures/index
@@ -20,7 +20,7 @@ Le invitamos a descubrir cómo hacer su día a día más sencillo con el uso de 
 
 .. toctree::
     :caption: ADEMPIERE ERP/CRM
-    :maxdepth: 2
+    :maxlistdepth:
     :numbered:
 
     adempiere/basic-steps/index
@@ -41,7 +41,7 @@ Le invitamos a descubrir cómo hacer su día a día más sencillo con el uso de 
 
 .. toctree::
     :caption: LOCALIZACIÓN VENEZUELA
-    :maxdepth: 2
+    :maxlistdepth:
     :numbered:
 
     lve/document-utility/index
@@ -52,7 +52,7 @@ Le invitamos a descubrir cómo hacer su día a día más sencillo con el uso de 
 
 .. toctree::
     :caption: E-commerce
-    :maxdepth: 2
+    :maxlistdepth:
     :numbered:
 
     ecommerce/index
