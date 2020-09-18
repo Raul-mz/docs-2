@@ -17,7 +17,13 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 
-
+fh = open('latex_preamble.tex', 'r+')
+PREAMBLE = fh.read()
+fh.close()
+latex_elements = {
+# Additional stuff for the LaTeX preamble.
+'preamble': PREAMBLE,
+}
 
 
 # -- Project information -----------------------------------------------------
