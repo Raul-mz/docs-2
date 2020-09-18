@@ -288,13 +288,12 @@ Para poder llevar estas transacciones bancarias a "**Pagos o Cobros sin Identifi
 
 #. Seleccione el o los "**Pago/Cobro**" con procedencia desconocida.
 
-    |Selección Pago sin Identificar|
+   
 
     Imagen 27. Selección Pago sin Identificar
 
 #. Seleccione en el campo "**Tipo de Transacción**" la opción "**Pago Sin Identificar**".
 
-    |Pago Cobro sin Identificar|
 
     Imagen 28. Pago Cobro sin Identificar
 
