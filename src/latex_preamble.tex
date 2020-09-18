@@ -1,2 +1,110 @@
-\setlistdepth{99}
+
+
 \documentclass[numbers=endperiod]{scrartcl}
+
+
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+
+
+
+% Extended enumerate:
+
+
+
+\newcounter{enumv}[enumiv]
+
+\newcounter{enumvi}[enumv]
+
+\newcommand*{\labelenumv}{\theenumv.}
+
+\newcommand*{\labelenumvi}{\theenumvi.}
+
+
+
+% Make the left margins a bit bigger for levels 5 and 6
+
+\setlength{\leftmarginv}{15pt}
+
+\setlength{\leftmarginvi}{15pt}
+
+
+
+\makeatletter
+
+
+
+\renewcommand*{\p@enumi}{}
+
+\renewcommand*{\p@enumii}{}
+
+\renewcommand*{\p@enumiii}{}
+
+\renewcommand*{\p@enumiv}{}
+
+\renewcommand*{\p@enumv}{}
+
+\renewcommand*{\p@enumvi}{}
+
+\renewcommand*{\enumerate}{%
+
+\ifnum \@enumdepth > 5\relax
+
+  \@toodeep
+
+ \else
+
+  \advance\@enumdepth\@ne
+
+  \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+
+  \expandafter\list\csname label\@enumctr\endcsname{%
+
+     \usecounter\@enumctr
+
+     \def\makelabel##1{\hss\llap{##1}}%
+
+   }%
+
+\fi
+
+}
+
+
+
+\makeatother
+
+
+% Modify item label formats
+
+\renewcommand*{\labelenumi}{\theenumi.}
+
+\renewcommand*{\labelenumii}{\theenumii.}
+
+\renewcommand*{\labelenumiii}{\theenumiii.}
+
+\renewcommand*{\labelenumiv}{\theenumiv.}
+
+
+
+% Modify the way the item counters are displayed:
+
+
+
+\renewcommand*{\theenumi}{\thesection.\arabic{enumi}}
+
+\renewcommand*{\theenumii}{\theenumi.\arabic{enumii}}%
+
+\renewcommand*{\theenumiii}{\theenumii.\arabic{enumiii}}%
+
+\renewcommand*{\theenumiv}{\theenumiii.\arabic{enumiv}}%
+
+
+
+% And for the new extended counters:
+
+\renewcommand*{\theenumv}{\theenumiv.\arabic{enumv}}%
+
+\renewcommand*{\theenumvi}{\theenumv.\arabic{enumvi}}%
