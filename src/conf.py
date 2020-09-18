@@ -26,6 +26,9 @@ latex_elements = {
 }
 
 
+
+ignore_chars = 'U+0640, U+064B..U+065F,U+06D6..U+06DC,U+06DF..U+06E8,U+06EA..U+06ED'
+
 # -- Project information -----------------------------------------------------
 
 project = 'ERPYA'
