@@ -24,7 +24,7 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: DocumentationHTML
-        path: src/_build/html/
+        path: _build/html/
 
     - name: Commit documentation changes
       run: |
