@@ -50,7 +50,7 @@ html_additional_pages = {"download": "pages/download.html", "index": "pages/inde
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.doctest','rst2pdf.pdfbuilder'
+extensions = ['sphinx.ext.doctest'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
