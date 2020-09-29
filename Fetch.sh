@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-echo Verify
+echo Verifys
 cd /opt/Development/workspace/docs
 # Verify
 git remote -v
