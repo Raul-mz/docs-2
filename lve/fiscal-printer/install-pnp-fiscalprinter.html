@@ -1,0 +1,524 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Instalar Impresora Fiscal PNP &mdash; ERPYA 1.0 Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> ERPYA
+          
+
+          
+            
+            <img src="../../_static/ERP_Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+<h2>Tabla de Contenido</h2>
+
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN ESTÁNDAR</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/standard-procedures/index.html"><strong>Procedimientos Estándares</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/openproject/index.html">1. <strong>Open Project</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/slack/index.html">2. <strong>Slack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/rst/index.html">3. <strong>Herramienta RestructuredText</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/basic-steps/index.html">1. <strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/master/index.html">2. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/quality-management/index.html">3. <strong>Gestión de Calidad</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/material-management/index.html">4. <strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/production-management/index.html">5. <strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/distribution-management/index.html">6. <strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/quote-to-invoice/index.html">7. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/pos-management/index.html">8. <strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/requisition-to-invoice/index.html">9. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/returns/index.html">10. <strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/open-items/index.html">11. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/loan-management/index.html">12. <strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/human-resources-management/index.html">13. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/asset-management/index.html">14. <strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/performance-analysis/index.html">15. <strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../document-utility/index.html">1. <strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">2. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procedures/index.html">3. <strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../report/index.html">4. <strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+</ul>
+
+            
+          
+<h2>Otros</h2>
+<ul>
+<li><a href="../../contributing.html"></a></li>
+</ul>
+
+<h2>Para Mayor Información</h2>
+<ul>
+<li><a href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a></li>
+<li><a href="https://github.com/erpcya/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Download Docs</a></li>
+</ul>
+
+<ul class="ethical-sidebar">
+    <li>
+        <a class="ethical-content" href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                <img src="https://assets.readthedocs.org/sustainability/readthedocs-logo-fs8.png">
+        </a>
+        
+        <li>
+            <a href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                Repositorios Privados y Soporte Prioritario!
+                
+                <br \>
+                    
+                Intenta leer los documentos para negocios hoy!
+                            
+            </a>
+        </li>
+    </li>
+</ul>
+
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ERPYA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><code class="docutils literal notranslate"><span class="pre">Instalar</span> <span class="pre">Impresora</span> <span class="pre">Fiscal</span> <span class="pre">PNP</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/lve/fiscal-printer/install-pnp-fiscalprinter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="instalar-impresora-fiscal-pnp">
+<span id="documento-instalar-impresora-fiscal-pnp"></span><h1><code class="docutils literal notranslate"><span class="pre">Instalar</span> <span class="pre">Impresora</span> <span class="pre">Fiscal</span> <span class="pre">PNP</span></code><a class="headerlink" href="#instalar-impresora-fiscal-pnp" title="Permalink to this headline">¶</a></h1>
+<p>Para la Instalación del servicio de impresión para la Impresora Fiscal es necesario tener instalado lo siguiente:</p>
+<ol class="arabic">
+<li><p><strong>Configuración en Cada Estación con Windows donde se emplee la impresora fiscal</strong>:</p>
+<ol class="arabic simple">
+<li><p>Instalar el <strong>JAVA</strong> <strong>JDK8</strong> y agregarlo a las Variables de Entorno.</p></li>
+<li><p>Instalar Librería <strong>pnpdll.dll</strong> de impresora Fiscal (en System32).</p></li>
+<li><p>Realizar Pruebas de Conectividad entren la impresora fiscal y el equipo con la aplicación <strong>testdllpnp.exe</strong>.</p></li>
+</ol>
+</li>
+<li><p><strong>Prueba de Conectividad con la impresora fiscal</strong>:</p>
+<p>Lo primero a realizar dentro de la aplicación <strong>testdllpnp.exe</strong> es
+seleccionar el puerto <strong>COM</strong> donde Esta conectada la Impresora, después
+cargar la librería <strong>pnpdll.dll</strong> pulsar los botones en el siguiente
+orden:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Secuencia</p></th>
+<th class="head"><p>Botón</p></th>
+<th class="head"><p>Parámetro</p></th>
+<th class="head"><p>Resultado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Abre Puerto</p></td>
+<td><p>Ninguno</p></td>
+<td><p>OK</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Estatus</p></td>
+<td><p>‘N’</p></td>
+<td><p>OK</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Ultimo</p></td>
+<td><p>Ninguno</p></td>
+<td><p>Lista de
+Caracteres (
+Ej.
+0000,0000,44,00
+,45,200312,1434
+27,0035,0000,00
+053574,00000662
+,0815)</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Cierra Puerto</p></td>
+<td><p>Ninguno</p></td>
+<td><p>OK</p></td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-center" id="id1">
+<img alt="Aplicación testdllpnp" src="lve/fiscal-printer/resources/test-pnp-fiscal-printer.png" />
+<p class="caption"><span class="caption-text">Imagen 1. Aplicación testdllpnp</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>En caso de no de no obtener ningún resultado o este ser <strong>TO</strong>, se deben
+chequear, el puerto serial o que librería de la impresora esta instalada
+correctamente.</p>
+<p>A partir de lo obtenido en la luego de aplicar el comando ultimo,se debe
+tomar en cuenta el cuarto valor en el siguiente ejemplo se observar como
+<strong>00</strong>.</p>
+<blockquote>
+<div><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>0000,0000,44,00,45,200312,143427,0035,0000,00053574,00000662,0815
+</pre></div>
+</div>
+</div></blockquote>
+<p>De acuerdo con el valor antes mencionado se puede verificar los
+siguientes códigos:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Código</p></th>
+<th class="head"><p>Significado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>00</p></td>
+<td><p>Impresora lista para abrir una
+factura.</p></td>
+</tr>
+<tr class="row-odd"><td><p>01</p></td>
+<td><p>Factura fiscal en curso.
+Esperando por un ítem,
+cerrar/cancelar la factura.</p></td>
+</tr>
+<tr class="row-even"><td><p>02</p></td>
+<td><p>Documento no fiscal en curso.
+Esperando por línea de texto,
+cerrar el documento.</p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p>Mas de un día desde el último
+reporte Z. Es necesario un
+reporte Z. Para poder realizar
+una venta se deberá efectuar
+previamente un reporte Z.</p></td>
+</tr>
+<tr class="row-even"><td><p>08</p></td>
+<td><p>Equipo bloqueado a la espera de
+impresión de cierre Z. Esto
+ocurre solo en caso de producirse
+un error durante la impresión de
+un cierre Z. Por ejemplo, si se
+acaba el papel</p></td>
+</tr>
+</tbody>
+</table>
+<p>Si el Código del Código luego de aplicar el comando Últimos es 00 se
+Procede a realizar un prueba de Impresión.</p>
+<blockquote>
+<div><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>“<strong>Antes de continuar debe cerrar testdllpnp.exe</strong>”</p>
+<p>Si esto no se realiza, la aplicación continuara ocupando el puerto serial, causando problemas de comunicación entre el Cliente de Cola de Impresion y la impresora.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Imprimir Reporte X</strong></p>
+<p>Para determinar que la impresora funciona correctamente, tanto
+mecánicamente como por software se necesita realizar una impresión,
+usando nuevamente la aplicación <strong>testdllpnp.exe</strong>, con la combinación
+de instrucciones:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 33%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Secuencia</p></th>
+<th class="head"><p>Botón</p></th>
+<th class="head"><p>Parámetro</p></th>
+<th class="head"><p>Resultado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Abre Puerto</p></td>
+<td><p>Ninguno</p></td>
+<td><p>OK</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Reporte X</p></td>
+<td><p>Ninguno</p></td>
+<td><p>OK</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Cierra Puerto</p></td>
+<td><p>Ninguno</p></td>
+<td><p>OK</p></td>
+</tr>
+</tbody>
+</table>
+<p>Inmediatamente iniciara a imprimir el Reporte X, lo cual es indicio de que no existe ningún problema.</p>
+</li>
+<li><p><strong>Configurar Cliente de cola de Impresión</strong>:</p>
+<ol class="arabic simple">
+<li><p>Descomprimir el archivo <strong>LocalPrinting-PnP.zip</strong> en diretorio <strong>C:PrintService</strong> en de Windows.</p></li>
+<li><p>Los equipos no se deben Suspender solo se de cerrar</p></li>
+<li><p>Ejecutar con el Arranque de Windows el Script <strong>StartPrintService.bat</strong></p></li>
+</ol>
+<p>Con el Script <strong>StartPrintService.bat</strong> ejecutándose realizar las
+siguientes pruebas:</p>
+<ol class="arabic simple">
+<li><p>Ingresando en <strong>ADempiere</strong> como compañía ubicar el proceso <strong>Configuración de
+Impresora Fiscal</strong> y ejecutar el proceso con los parámetros:</p></li>
+</ol>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parámetro</p></th>
+<th class="head"><p>Valor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Impresora Fiscal</p></td>
+<td><p>Seleccionar Impresora a Emplear para la prueba</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tipo de comando Fiscal</p></td>
+<td><p>Obtener Estado de Impresora</p></td>
+</tr>
+</tbody>
+</table>
+<p>Esto retorna el mismo resultado que el comando Estatus de
+<strong>testdllpnp.exe</strong>, en caso de error de conexión retorna un error de
+Timeout. Revisar lo siguiente: Que el archivo <strong>StartPrintService.bat</strong>
+este en ejecución.</p>
+<ol class="arabic simple">
+<li><p>Para el caso donde la conexión se ejecuta correctamente, se procede a
+realizar una impresión de control usando el Proceso <strong>Imprimir
+Reporte Fiscal</strong> con los parámetros:</p></li>
+</ol>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parámetro</p></th>
+<th class="head"><p>Valor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Impresora Fiscal</p></td>
+<td><p>Seleccionar Impresora a Emplear para la prueba</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tipo de comando Fiscal</p></td>
+<td><p>Reporte X</p></td>
+</tr>
+</tbody>
+</table>
+<p>Si inicia la impresión todo esta correctamente configurado y funcional.</p>
+</li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, ADempiere ERP
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: 
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+       <strong> <dd><a href="/master/">latest</a></dd>
+        <dd><a href="/4.0.0/">4.0.0</a></dd>
+        <dd><a href="/adempiere-3.7/">ADempiere-3.7</a></dd> </strong> 
+       
+      </dl>
+     
+    <hr/>
+    
+ 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

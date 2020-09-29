@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.4.5.1. Procesar Retención de Documento por Cobrar &mdash; ERPYA 1.0 Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="4. Reportes de ADempiere" href="../../../report/index.html" />
+    <link rel="prev" title="3.4.5. Retenciones de Cuentas por Cobrar en ADempiere" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home" alt="Documentation Home"> ERPYA
+          
+
+          
+            
+            <img src="../../../../_static/ERP_Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+<h2>Tabla de Contenido</h2>
+
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN ESTÁNDAR</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/standard-procedures/index.html"><strong>Procedimientos Estándares</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/openproject/index.html">1. <strong>Open Project</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/slack/index.html">2. <strong>Slack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/rst/index.html">3. <strong>Herramienta RestructuredText</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/basic-steps/index.html">1. <strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/master/index.html">2. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/quality-management/index.html">3. <strong>Gestión de Calidad</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/material-management/index.html">4. <strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/production-management/index.html">5. <strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/distribution-management/index.html">6. <strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/quote-to-invoice/index.html">7. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/pos-management/index.html">8. <strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/requisition-to-invoice/index.html">9. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/returns/index.html">10. <strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/open-items/index.html">11. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/loan-management/index.html">12. <strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/human-resources-management/index.html">13. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/asset-management/index.html">14. <strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../adempiere/performance-analysis/index.html">15. <strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../document-utility/index.html">1. <strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../fiscal-printer/index.html">2. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">3. <strong>Procedimientos</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../human-resources/index.html">3.1. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../payroll/index.html">3.2. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../import/index.html">3.3. <strong>Gestión de Importación</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">3.4. <strong>Gestión de Retenciones</strong></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../withholding-iva/index.html">3.4.1. <strong>Retención de IVA de Cuentas por Pagar en ADempiere</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../withholding-islr/index.html">3.4.2. <strong>Retención de ISLR de Cuentas por Pagar en ADempiere</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../withholding-municipality/index.html">3.4.3. <strong>Retención Municipal de Cuentas por Pagar en ADempiere</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../withholding-declaration-cxp/index.html">3.4.4. <strong>Declaración de Retenciones de Cuentas por Pagar en ADempiere</strong></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">3.4.5. <strong>Retenciones de Cuentas por Cobrar en ADempiere</strong></a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">3.4.5.1. <strong>Procesar Retención de Documento por Cobrar</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consultar-e-imprimir-el-documento-por-cobrar-generado">3.4.5.2. <strong>Consultar e Imprimir el Documento por Cobrar Generado</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../report/index.html">4. <strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+</ul>
+
+            
+          
+<h2>Otros</h2>
+<ul>
+<li><a href="../../../../contributing.html"></a></li>
+</ul>
+
+<h2>Para Mayor Información</h2>
+<ul>
+<li><a href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a></li>
+<li><a href="https://github.com/erpcya/docs/issues">GitHub</a></li>
+<li><a href="../../../../download.html">Download Docs</a></li>
+</ul>
+
+<ul class="ethical-sidebar">
+    <li>
+        <a class="ethical-content" href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                <img src="https://assets.readthedocs.org/sustainability/readthedocs-logo-fs8.png">
+        </a>
+        
+        <li>
+            <a href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                Repositorios Privados y Soporte Prioritario!
+                
+                <br \>
+                    
+                Intenta leer los documentos para negocios hoy!
+                            
+            </a>
+        </li>
+    </li>
+</ul>
+
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">ERPYA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html"><span class="section-number">3. </span><strong>Procedimientos</strong></a> &raquo;</li>
+        
+          <li><a href="../index.html"><span class="section-number">3.4. </span><strong>Gestión de Retenciones</strong></a> &raquo;</li>
+        
+          <li><a href="index.html"><span class="section-number">3.4.5. </span><strong>Retenciones de Cuentas por Cobrar en ADempiere</strong></a> &raquo;</li>
+        
+      <li><span class="section-number">3.4.5.1. </span><strong>Procesar Retención de Documento por Cobrar</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/lve/procedures/withholding-management/withholding-cxc/withholding-cxc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="procesar-retencion-de-documento-por-cobrar">
+<span id="documento-retenciones-cxc"></span><h1><span class="section-number">3.4.5.1. </span><strong>Procesar Retención de Documento por Cobrar</strong><a class="headerlink" href="#procesar-retencion-de-documento-por-cobrar" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Ventas</strong>”, luego seleccione la ventana “<strong>Documento por Cobrar</strong>”.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere 1" src="../../../../_images/menu-doc-cobrar.png" /></p>
+<p>Imagen 1. Menú de ADempiere</p>
+</div></blockquote>
+</li>
+<li><p>Ubique el documento por cobrar al cual se le aplicará la retención de IVA, correspondiente a la factura de la venta realizada.</p>
+<blockquote>
+<div><p><img alt="Factura de CxC 1" src="../../../../_images/factura12.png" /></p>
+<p>Imagen 2. Factura de Cuentas por Cobrar</p>
+<ol class="arabic">
+<li><p>Seleccione el icono “<strong>Proceso</strong>”, en la barra de herramientas de ADempiere para desplegar el menú del icono con sus diferentes opciones, luego seleccione la opción “<strong>Procesar Retenciones CxC</strong>”.</p>
+<blockquote>
+<div><p><img alt="Icono Proceso" src="../../../../_images/icono-proceso.png" /></p>
+<p>Imagen 3. Icono Proceso</p>
+</div></blockquote>
+</li>
+<li><p>Podrá visualizar la ventana “<strong>Procesar Retenciones CxC</strong>” con los campos necesarios para generar el documento de retención.</p>
+<blockquote>
+<div><p><img alt="Opción Procesar Retención de CxC" src="../../../../_images/vent-proc-ret1.png" /></p>
+<p>Imagen 4. Opción Procesar Retención de CxC</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Tipo de Retención</strong>”, el tipo de retención a aplicar a la factura por cobrar.</p>
+<blockquote>
+<div><p><img alt="Campo Tipo de Retención 1" src="../../../../_images/tipo-retencion.png" /></p>
+<p>Imagen 5. Campo Tipo de Retención</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El campo cuenta con tres opciones que son “<strong>IM_Retencion de Impuesto Municipal</strong>, “<strong>ISLR_Retención de I.S.L.R.</strong>” y “<strong>I.V.A_Retención de I.V.A.</strong>”. Recuerde que la selección de este campo va a depender de la retención que se va a aplicar a la factura de cuentas por cobrar.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Funcionalidades</strong>”, la configuración en ADempiere de la retención a aplicar a la factura de cuentas por cobrar.</p>
+<blockquote>
+<div><p><img alt="Campo Funcionalidades" src="../../../../_images/funcionalidades.png" /></p>
+<p>Imagen 6. Campo Funcionalidades</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El valor de este campo va a depender de lo seleccionado en el campo “<strong>Tipo de Retención</strong>”.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Retención</strong>”, la retención a aplicar a la factura por cobrar.</p>
+<blockquote>
+<div><p><img alt="Campo Retención 1" src="../../../../_images/retencion.png" /></p>
+<p>Imagen 7. Campo Retención</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El valor de este campo va a depender de lo seleccionado en el campo “<strong>Tipo de Retención</strong>”, se debe seleccionar la opción referente al tipo de retención seleccionado.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>Monto Base</strong>”, el monto total del IVA correspondiente a la factura de cuentas por cobrar.</p>
+<blockquote>
+<div><p><img alt="Campo Monto Base" src="../../../../_images/monto-base.png" /></p>
+<p>Imagen 8. Campo Monto Base</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El valor ingresado en este campo debe ser el mismo valor que se encuentra en el campo “<strong>Total del Impuesto</strong>” de la pestaña “<strong>Impuesto de la Factura</strong>”, de la ventana “<strong>Documento por Cobrar</strong>”.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>Porcentaje de Retención</strong>”, el porcentaje que se va a retener al monto base. Para ejemplificar el registro es utilizado el porcentaje “<strong>75</strong>”, que equivale en monto a “<strong>0,75</strong>”.</p>
+<blockquote>
+<div><p><img alt="Campo Porcentaje de Retención" src="../../../../_images/porc-ret.png" /></p>
+<p>Imagen 9. Campo Porcentaje de Retención</p>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>Monto de Retención</strong>”, el monto de retención que se va a aplicar a la factura de cuentas por cobrar.</p>
+<blockquote>
+<div><p><img alt="Monto de Retención" src="../../../../_images/monto-ret.png" /></p>
+<p>Imagen 10. Campo Monto de Retención</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El valor de este campo es el resultado de la multiplicación del monto base por el porcentaje de retención. Ejemplo: 20.000,00 * 75% = 15.00,00 o también puede ser 20.000,00 * 0,75 = 15.00,00.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>No. del Documento</strong>”, el número del documento del comprobante de retención facilitado por el socio del negocio cliente que aplico la retención.</p>
+<blockquote>
+<div><p><img alt="Campo No. del Documento" src="../../../../_images/n-doc1.png" /></p>
+<p>Imagen 11. Campo No. del Documento</p>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>F. Documento</strong>”, la fecha del comprobante de retención facilitado por el socio del negocio cliente que aplico la retención.</p>
+<blockquote>
+<div><p><img alt="Campo F. Documento" src="../../../../_images/fec-doc.png" /></p>
+<p>Imagen 12. Campo F. Documento</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione la opción “<strong>OK</strong>”, para procesar la retención y generar en la ventana “<strong>Documento por Cobrar</strong>”, el documento de retención con las indicaciones ingresadas en la ventana del proceso “<strong>Procesar Retenciones CxC</strong>”, con el número de documento ingresado en el campo “<strong>No. del Documento</strong>”.</p>
+<blockquote>
+<div><p><img alt="Opción OK" src="../../../../_images/op-ok1.png" /></p>
+<p>Imagen 13. Campo Opción OK</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="consultar-e-imprimir-el-documento-por-cobrar-generado">
+<h1><span class="section-number">3.4.5.2. </span><strong>Consultar e Imprimir el Documento por Cobrar Generado</strong><a class="headerlink" href="#consultar-e-imprimir-el-documento-por-cobrar-generado" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p>El documento generado desde la ventana del proceso “<strong>Procesar Retenciones CxC</strong>”, se puede visualizar de la siguiente manera al buscarlo en la ventana “<strong>Documento por Cobrar</strong>”, con el número de documento ingresado en el campo “<strong>No. del Documento</strong>” del proceso. Para ejemplificar el registro es utilizado el número de documento “<strong>123456789</strong>”.</p>
+<blockquote>
+<div><p><img alt="Retención de IVA Cuentas por Cobrar" src="../../../../_images/doc-ret-generado.png" /></p>
+<p>Imagen 14. Documento de Retención de IVA Cuentas por Cobrar Generado.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El documento es generado en estado “<strong>Completo</strong>” y con las especificaciones ingresadas en la ventana del proceso “<strong>Procesar Retenciones CxC</strong>”. Adicional a ello, toma el socio del negocio que se encuentra en la factura por cobrar desde donde se realizó el proceso.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el icono “<strong>Imprimir</strong>” ubicado en la barra de herramientas de ADempiere, para visualizar el documento en PDF y poder imprimir el mismo.</p>
+<blockquote>
+<div><p><img alt="Icono Imprimir" src="../../../../_images/icono-imprimir.png" /></p>
+<p>Imagen 15. Icono Imprimir</p>
+</div></blockquote>
+</li>
+<li><p>El PDF del documento “<strong>Retención de IVA CxC</strong>” quedaría de la siguiente manera.</p>
+<blockquote>
+<div><p><img alt="PDF Retención de IVA CxC" src="../../../../_images/retencion-generada.png" /></p>
+<p>Imagen 16. PDF del Documento Retención de IVA CxC</p>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El procedimiento para generar en ADempiere las retenciones de ISLR y municipales de cuentas por cobrar es el mismo explicado en el presente documento, tomando en cuenta las notas con relación a ellas en la descripción de los campos “<strong>Tipo de Retención</strong>”, “<strong>Funcionalidades</strong>” y “<strong>Retención</strong>”.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../report/index.html" class="btn btn-neutral float-right" title="4. Reportes de ADempiere" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="3.4.5. Retenciones de Cuentas por Cobrar en ADempiere" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, ADempiere ERP
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: 
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+       <strong> <dd><a href="/master/">latest</a></dd>
+        <dd><a href="/4.0.0/">4.0.0</a></dd>
+        <dd><a href="/adempiere-3.7/">ADempiere-3.7</a></dd> </strong> 
+       
+      </dl>
+     
+    <hr/>
+    
+ 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

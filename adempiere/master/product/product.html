@@ -1,0 +1,766 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.2.1. Registro de Producto &mdash; ERPYA 1.0 Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="3. Gestión de Calidad" href="../../quality-management/index.html" />
+    <link rel="prev" title="2.2. Producto" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> ERPYA
+          
+
+          
+            
+            <img src="../../../_static/ERP_Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+<h2>Tabla de Contenido</h2>
+
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN ESTÁNDAR</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/standard-procedures/index.html"><strong>Procedimientos Estándares</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/openproject/index.html">1. <strong>Open Project</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/slack/index.html">2. <strong>Slack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/rst/index.html">3. <strong>Herramienta RestructuredText</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../basic-steps/index.html">1. <strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">2. <strong>Datos Maestros</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../business-partner/index.html">2.1. <strong>Socio del Negocio</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">2.2. <strong>Producto</strong></a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2.2.1. <strong>Registro de Producto</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pestana-compras">2.2.1.1. <strong>Pestaña Compras</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pestana-precio">2.2.1.2. <strong>Pestaña Precio</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pestana-conversion-unidad-de-medida">2.2.1.3. <strong>Pestaña Conversión Unidad de Medida</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../quality-management/index.html">3. <strong>Gestión de Calidad</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../material-management/index.html">4. <strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../production-management/index.html">5. <strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distribution-management/index.html">6. <strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html">7. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pos-management/index.html">8. <strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html">9. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../returns/index.html">10. <strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open-items/index.html">11. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../loan-management/index.html">12. <strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../human-resources-management/index.html">13. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../asset-management/index.html">14. <strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance-analysis/index.html">15. <strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/document-utility/index.html">1. <strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">2. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/index.html">3. <strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/report/index.html">4. <strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+</ul>
+
+            
+          
+<h2>Otros</h2>
+<ul>
+<li><a href="../../../contributing.html"></a></li>
+</ul>
+
+<h2>Para Mayor Información</h2>
+<ul>
+<li><a href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a></li>
+<li><a href="https://github.com/erpcya/docs/issues">GitHub</a></li>
+<li><a href="../../../download.html">Download Docs</a></li>
+</ul>
+
+<ul class="ethical-sidebar">
+    <li>
+        <a class="ethical-content" href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                <img src="https://assets.readthedocs.org/sustainability/readthedocs-logo-fs8.png">
+        </a>
+        
+        <li>
+            <a href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                Repositorios Privados y Soporte Prioritario!
+                
+                <br \>
+                    
+                Intenta leer los documentos para negocios hoy!
+                            
+            </a>
+        </li>
+    </li>
+</ul>
+
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ERPYA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html"><span class="section-number">2. </span><strong>Datos Maestros</strong></a> &raquo;</li>
+        
+          <li><a href="index.html"><span class="section-number">2.2. </span><strong>Producto</strong></a> &raquo;</li>
+        
+      <li><span class="section-number">2.2.1. </span><strong>Registro de Producto</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/adempiere/master/product/product.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="registro-de-producto">
+<span id="documento-producto"></span><h1><span class="section-number">2.2.1. </span><strong>Registro de Producto</strong><a class="headerlink" href="#registro-de-producto" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p>En el menú de ADempiere, ubique y seleccione la carpeta “<strong>Gestión de Materiales</strong>”, luego seleccione la carpeta “<strong>Reglas de Gestión de Materiales</strong>” y finalmente seleccione la ventana “<strong>Producto</strong>”, adjunto imagen para referencia.</p>
+<div class="figure align-default" id="id1">
+<img alt="Menú de ADempiere" src="../../../_images/menu3.png" />
+<p class="caption"><span class="caption-text">Imagen 1. Menú de ADempiere</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+<p>En esta ventana se registran los datos principales que la empresa requiere conocer de los productos, con la finalidad de ser utilizada al momento de realizar alguna compra / venta con dicho producto. Cada uno de los campos con el símbolo (*) son obligatorios para el registro.</p>
+<ol class="arabic">
+<li><p>Podrá visualizar la ventana “<strong>Producto</strong>”, dónde debe seleccionar el icono “<strong>Registro Nuevo</strong>”, que se encuentra ubicado en la barra de herramientas de ADempiere.</p>
+<div class="figure align-default" id="id2">
+<img alt="Icono Registro Nuevo" src="../../../_images/nuevo1.png" />
+<p class="caption"><span class="caption-text">Imagen 2. Icono Registro Nuevo</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Seleccione en el campo “<strong>Organización</strong>”, la organización para la cual esta registrando el producto.</p>
+<div class="figure align-default" id="id3">
+<img alt="Campo Organización" src="../../../_images/org1.png" />
+<p class="caption"><span class="caption-text">Imagen 3. Campo Organización</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Para que el producto este disponible para todas las organizaciones, el mismo deberá estar registrado con la organización en (*) de lo contrario el producto solo estará disponible para una sola organización.</p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Código</strong>”, el código para el producto que esta registrando, este código es definido por un estándar de códificación establecido en <a class="reference external" href="http://erpya.com">ERPyA</a> para <a class="reference external" href="https://docs.erpya.com/es/latest/lve/standard-coding/product/">Codificar los Productos</a>.</p>
+<div class="figure align-default" id="id4">
+<img alt="Campo Código" src="../../../_images/codigo2.png" />
+<p class="caption"><span class="caption-text">Imagen 4. Campo Código</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Nombre</strong>”, el nombre del producto que esta registrando.</p>
+<div class="figure align-default" id="id5">
+<img alt="Campo Nombre" src="../../../_images/nombre4.png" />
+<p class="caption"><span class="caption-text">Imagen 5. Campo Nombre</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Descripción</strong>”, una breve descripción correspondiente al producto que esta registrando.</p>
+<div class="figure align-default" id="id6">
+<img alt="Campo Descripción" src="../../../_images/des1.png" />
+<p class="caption"><span class="caption-text">Imagen 6. Campo Descripción</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Nota de Documento</strong>”, cualquier información adicional que considere necesaria.</p>
+<div class="figure align-default" id="id7">
+<img alt="Campo Nota de Documento" src="../../../_images/nota.png" />
+<p class="caption"><span class="caption-text">Imagen 7. Campo Nota de Documento</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>UPC/EAN</strong>”, el código de barras correspondiente al producto que esta registrando.</p>
+<div class="figure align-default" id="id8">
+<img alt="Campo UPC/EAN" src="../../../_images/upc.png" />
+<p class="caption"><span class="caption-text">Imagen 8. Campo UPC/EAN</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>UM Almacenamiento</strong>”, la unidad de medida de almacenamiento del producto.</p>
+<div class="figure align-default" id="id9">
+<img alt="Campo UM Almacenamiento" src="../../../_images/um.png" />
+<p class="caption"><span class="caption-text">Imagen 9. Campo UM Almacenamiento</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Categoría del Producto</strong>”, la categoría a la cual pertenece el producto que esta registrando, la selección de este define el comportamiento del producto que se esta registrando, dicho comportamiento se encuentra explicado en el documento <a class="reference internal" href="../../../lve/document-utility/product-category.html#documento-categoria-productos"><span class="std std-ref">Categorías de Productos</span></a> elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>.</p>
+<div class="figure align-default" id="id10">
+<img alt="Campo Categoría del Producto" src="../../../_images/categ.png" />
+<p class="caption"><span class="caption-text">Imagen 10. Campo Categoría del Producto</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Grupo de Producto</strong>”, el grupo al cual pertenece el producto que esta registrando, la selección de este define el comportamiento del producto que se esta registrando, dicho comportamiento se encuentra explicado en el documento <a class="reference internal" href="../../../lve/document-utility/product-group.html#documento-grupo-producto"><span class="std std-ref">Grupo de Productos</span></a> elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>.</p>
+<div class="figure align-default" id="id11">
+<img alt="Campo Grupo de Producto" src="../../../_images/grupo2.png" />
+<p class="caption"><span class="caption-text">Imagen 11. Campo Grupo de Producto</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Clase de Producto</strong>”, la clase a la cual pertenece el producto que esta registrando.</p>
+<div class="figure align-default" id="id12">
+<img alt="Campo Grupo de Producto" src="../../../_images/clase.png" />
+<p class="caption"><span class="caption-text">Imagen 12. Campo Grupo de Producto</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Clasificación de Producto</strong>”, la clasificación a la cual pertenece el producto que esta registrando.</p>
+<div class="figure align-default" id="id13">
+<img alt="Campo Clasificación de Producto" src="../../../_images/clasifi.png" />
+<p class="caption"><span class="caption-text">Imagen 13. Campo Clasificación de Producto</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Categoría del Impuesto</strong>”, la agrupación de impuestos aplicale al producto que esta registrando.</p>
+<div class="figure align-default" id="id14">
+<img alt="Campo Categoría del Impuesto" src="../../../_images/impuesto.png" />
+<p class="caption"><span class="caption-text">Imagen 14. Campo Categoría del Impuesto</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Tipo de Impuesto</strong>”, el tipo de impuesto aplicable al producto que esta registrando.</p>
+<div class="figure align-default" id="id15">
+<img alt="Campo Tipo de Impuesto" src="../../../_images/timpuesto.png" />
+<p class="caption"><span class="caption-text">Imagen 15. Campo Tipo de Impuesto</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Grupo 1</strong>”, el grupo al cual pertenece el producto.</p>
+<div class="figure align-default" id="id16">
+<img alt="Campo Grupo 1" src="../../../_images/grupo11.png" />
+<p class="caption"><span class="caption-text">Imagen 16. Campo Grupo 1</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Grupo 2</strong>”, el grupo adicional al cual pertenece el producto.</p>
+<div class="figure align-default" id="id17">
+<img alt="Campo Grupo 2" src="../../../_images/grupo21.png" />
+<p class="caption"><span class="caption-text">Imagen 17. Campo Grupo 2</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Reconocimiento de Ingreso</strong>”, como serán reconocidos los ingresos para el producto.</p>
+<div class="figure align-default" id="id18">
+<img alt="Campo Reconocimiento de Ingreso" src="../../../_images/reconocimiento.png" />
+<p class="caption"><span class="caption-text">Imagen 18. Campo Reconocimiento de Ingreso</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Línea de Producto</strong>”, la clasificación para agrupar el producto.</p>
+<div class="figure align-default" id="id19">
+<img alt="Campo Línea de Producto" src="../../../_images/linea.png" />
+<p class="caption"><span class="caption-text">Imagen 19. Campo Línea de Producto</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>UM</strong>”, la unidad de medida del producto.</p>
+<div class="figure align-default" id="id20">
+<img alt="Campo UM" src="../../../_images/unidadm.png" />
+<p class="caption"><span class="caption-text">Imagen 20. Campo UM</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Agente Compañía</strong>”, el agente de compras del producto que esta registrando.</p>
+<div class="figure align-default" id="id21">
+<img alt="Campo Agente Compañía" src="../../../_images/agente1.png" />
+<p class="caption"><span class="caption-text">Imagen 21. Campo Agente Compañía</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Tipo de Producto</strong>”, el tipo de producto que esta registrando.</p>
+<div class="figure align-default" id="id22">
+<img alt="Campo Tipo de Producto" src="../../../_images/tipopro.png" />
+<p class="caption"><span class="caption-text">Imagen 22. Campo Tipo de Producto</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en “<strong>Patrón de Correo</strong>”, la plantilla utilizada para ser enviada a los socios del negocio con respecto al producto.</p>
+<div class="figure align-default" id="id23">
+<img alt="Campo Patrón de Correo" src="../../../_images/patron.png" />
+<p class="caption"><span class="caption-text">Imagen 23. Campo Patrón de Correo</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Peso</strong>”, el peso del producto que esta registrando.</p>
+<div class="figure align-default" id="id24">
+<img alt="Campo Peso" src="../../../_images/peso.png" />
+<p class="caption"><span class="caption-text">Imagen 24. Campo Peso</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Volumen</strong>”, el volumen del producto que esta registrando.</p>
+<div class="figure align-default" id="id25">
+<img alt="Campo Volumen" src="../../../_images/volumen.png" />
+<p class="caption"><span class="caption-text">Imagen 25. Campo Volumen</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Peso Mínimo</strong>”, el peso mínimo del producto que esta registrando.</p>
+<div class="figure align-default" id="id26">
+<img alt="Campo Peso Mínimo" src="../../../_images/pesomin.png" />
+<p class="caption"><span class="caption-text">Imagen 26. Campo Peso Mínimo</span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Peso Máximo</strong>”, el peso máximo del producto que esta registrando.</p>
+<div class="figure align-default" id="id27">
+<img alt="Campo Peso Máximo" src="../../../_images/pesomax.png" />
+<p class="caption"><span class="caption-text">Imagen 27. Campo Peso Máximo</span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione el checklist “<strong>Producto a Granel</strong>”, para indicar que el producto que esta registrando es a granel.</p>
+<div class="figure align-default" id="id28">
+<img alt="Campo Producto a Granel" src="../../../_images/granel.png" />
+<p class="caption"><span class="caption-text">Imagen 28. Campo Producto a Granel</span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Categoría de Fletes</strong>”, la categoría de fletes a aplicar al producto seleccionado.</p>
+<div class="figure align-default" id="id29">
+<img alt="Campo Categoría de Fletes" src="../../../_images/fletes.png" />
+<p class="caption"><span class="caption-text">Imagen 29. Campo Categoría de Fletes</span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione el checklist “<strong>Entrega Directa</strong>”, para indicar que los envíos del producto que esta registrando, se realizarán directamente al socio del negocio cliente.</p>
+<div class="figure align-default" id="id30">
+<img alt="Campo Entrega Directa" src="../../../_images/entrega1.png" />
+<p class="caption"><span class="caption-text">Imagen 30. Campo Entrega Directa</span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Podrá apreciar el checklist “<strong>Almacenado</strong>”, indicando que la empresa almacena el producto que esta registrando.</p>
+<div class="figure align-default" id="id31">
+<img alt="Campo Almacenado" src="../../../_images/almacenado.png" />
+<p class="caption"><span class="caption-text">Imagen 31. Campo Almacenado</span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Ubicación</strong>”, la ubicación de almacenamiento dentro de la empresa del producto que esta registrando.</p>
+<div class="figure align-default" id="id32">
+<img alt="Campo Ubicación" src="../../../_images/ubicacion.png" />
+<p class="caption"><span class="caption-text">Imagen 32. Campo Ubicación</span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Ancho de Anaquel</strong>”, el ancho requerido del anaquel para almacenar el producto que esta registrando.</p>
+<div class="figure align-default" id="id33">
+<img alt="Campo Ancho de Anaquel" src="../../../_images/ancho.png" />
+<p class="caption"><span class="caption-text">Imagen 33. Campo Ancho de Anaquel</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Altura del Anaquel</strong>”, la altura requerida del anaquel para almacenar el producto que esta registrando.</p>
+<div class="figure align-default" id="id34">
+<img alt="Campo Altura del Anaquel" src="../../../_images/alto.png" />
+<p class="caption"><span class="caption-text">Imagen 34. Campo Altura del Anaquel</span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Profundidad del Anaquel</strong>”, la profundidad requerida del anaquel para almacenar el producto que esta registrando.</p>
+<div class="figure align-default" id="id35">
+<img alt="Campo Profundidad del Anaquel" src="../../../_images/profundo.png" />
+<p class="caption"><span class="caption-text">Imagen 35. Campo Profundidad del Anaquel</span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Unidades por Paquete</strong>”, el número de unidades del producto que esta registrando que conforman un paquete.</p>
+<div class="figure align-default" id="id36">
+<img alt="Campo Unidades por Paquete" src="../../../_images/paquete.png" />
+<p class="caption"><span class="caption-text">Imagen 36. Campo Unidades por Paquete</span><a class="headerlink" href="#id36" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Unidades por Tarima</strong>”,</p>
+<div class="figure align-default" id="id37">
+<img alt="Campo Unidades por Tarima" src="../../../_images/tarima.png" />
+<p class="caption"><span class="caption-text">Imagen 37. Campo Unidades por Tarima</span><a class="headerlink" href="#id37" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione el checklist “<strong>Descontinuado</strong>”, para indicar que el producto no se encuentra disponible.</p>
+<div class="figure align-default" id="id38">
+<img alt="Campo Descontinuado" src="../../../_images/descon.png" />
+<p class="caption"><span class="caption-text">Imagen 38. Campo Descontinuado</span><a class="headerlink" href="#id38" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Tipo de Suscripción</strong>”, el tipo de suscripción del producto.</p>
+<div class="figure align-default" id="id39">
+<img alt="Campo Tipo de Suscripción" src="../../../_images/suscri.png" />
+<p class="caption"><span class="caption-text">Imagen 39. Campo Tipo de Suscripción</span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione el checklist “<strong>Excluir de Auto Entrega</strong>”, para excluir el producto de la entrega automática.</p>
+<div class="figure align-default" id="id40">
+<img alt="Campo Excluir de Auto Entrega" src="../../../_images/excluir.png" />
+<p class="caption"><span class="caption-text">Imagen 40. Campo Excluir de Auto Entrega</span><a class="headerlink" href="#id40" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Dirección Web Imagen</strong>”, la url de la imagen del producto.</p>
+<div class="figure align-default" id="id41">
+<img alt="Campo Dirección Web Imagen" src="../../../_images/imagenw.png" />
+<p class="caption"><span class="caption-text">Imagen 41. Campo Dirección Web Imagen</span><a class="headerlink" href="#id41" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Dirección Web Descripción</strong>”, la url de la descripción del producto.</p>
+<div class="figure align-default" id="id42">
+<img alt="Campo Dirección Web Descripción" src="../../../_images/imagend.png" />
+<p class="caption"><span class="caption-text">Imagen 42. Campo Dirección Web Descripción</span><a class="headerlink" href="#id42" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Días de Caducidad</strong>”, el número de días límite de disponibilidad o garantía del producto que esta registrando.</p>
+<div class="figure align-default" id="id43">
+<img alt="Campo Días de Caducidad" src="../../../_images/caducidad.png" />
+<p class="caption"><span class="caption-text">Imagen 43. Campo Días de Caducidad</span><a class="headerlink" href="#id43" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Días Mínimos Caducidad</strong>”, el número mínimo de días límite de disponibilidad o garantía del producto que esta registrando.</p>
+<div class="figure align-default" id="id44">
+<img alt="Campo Días Mínimos Caducidad" src="../../../_images/mcaducidad.png" />
+<p class="caption"><span class="caption-text">Imagen 44. Campo Días Mínimos Caducidad</span><a class="headerlink" href="#id44" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Conjunto de Atributos</strong>”, el atributo del producto que esta registrando.</p>
+<div class="figure align-default" id="id45">
+<img alt="Campo Conjunto de Atributos" src="../../../_images/conjuntoa.png" />
+<p class="caption"><span class="caption-text">Imagen 45. Campo Conjunto de Atributos</span><a class="headerlink" href="#id45" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Instancia Conjunto de Atributos</strong>”, el conjunto de atributos perteneciente al producto que esta registrando.</p>
+<div class="figure align-default" id="id46">
+<img alt="Campo Instancia Conjunto de Atributo" src="../../../_images/instanciaca.png" />
+<p class="caption"><span class="caption-text">Imagen 46. Campo Instancia Conjunto de Atributo</span><a class="headerlink" href="#id46" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Código CPE</strong>”, el código CPE perteneciente al producto que esta registrando.</p>
+<div class="figure align-default" id="id47">
+<img alt="Campo Código CPE" src="../../../_images/cpe.png" />
+<p class="caption"><span class="caption-text">Imagen 47. Campo Código CPE</span><a class="headerlink" href="#id47" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p>Seleccione el icono “<strong>Guardar Cambios</strong>” en la barra de herramientas de ADempiere.</p>
+<div class="figure align-default" id="id48">
+<img alt="Icono Guardar Cambios" src="../../../_images/guardar3.png" />
+<p class="caption"><span class="caption-text">Imagen 48. Icono Guardar Cambios</span><a class="headerlink" href="#id48" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+<div class="section" id="pestana-compras">
+<h2><span class="section-number">2.2.1.1. </span><strong>Pestaña Compras</strong><a class="headerlink" href="#pestana-compras" title="Permalink to this headline">¶</a></h2>
+<p>En esta ventana se registran los precios y reglas de compras por socios del negocio, con la finalidad de ser utilizada al momento de realizar alguna compra de dicho producto. Cada uno de los campos con el símbolo (*) son obligatorios para el registro.</p>
+<ol class="arabic">
+<li><p>Seleccione la pestaña “<strong>Compras</strong>”, ubicada del lado izquierdo de la ventana “<strong>Producto</strong>” y proceda al llenado de los campos correspondientes.</p>
+<div class="figure align-default" id="id49">
+<img alt="Pestaña Compras" src="../../../_images/lineacompras.png" />
+<p class="caption"><span class="caption-text">Imagen 49. Pestaña Compras</span><a class="headerlink" href="#id49" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Seleccione en el campo “<strong>Socio del Negocio</strong>”, el socio del negocio proveedor del producto que esta registrando.</p>
+<div class="figure align-default" id="id50">
+<img alt="Campo Socio del Negocio Proveedor" src="../../../_images/proveedor.png" />
+<p class="caption"><span class="caption-text">Imagen 50. Campo Socio del Negocio Proveedor</span><a class="headerlink" href="#id50" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>UPC/EAN</strong>”, el código de barras correspondiente al producto que esta registrando.</p>
+<div class="figure align-default" id="id51">
+<img alt="Campo UPC/EAN" src="../../../_images/upclinea.png" />
+<p class="caption"><span class="caption-text">Imagen 51. Campo UPC/EAN</span><a class="headerlink" href="#id51" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Moneda</strong>”, la moneda utilizada para la compra del producto que esta registrando.</p>
+<div class="figure align-default" id="id52">
+<img alt="Campo Moneda" src="../../../_images/moneda.png" />
+<p class="caption"><span class="caption-text">Imagen 52. Campo Moneda</span><a class="headerlink" href="#id52" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Precio de Lista</strong>”, el precio del producto en la moneda seleccionada.</p>
+<div class="figure align-default" id="id53">
+<img alt="Campo Precio de Lista" src="../../../_images/plista.png" />
+<p class="caption"><span class="caption-text">Imagen 53. Campo Precio de Lista</span><a class="headerlink" href="#id53" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>Fecha de Efectividad del Precio</strong>”, la fecha en la que el precio ingresado es válido.</p>
+<div class="figure align-default" id="id54">
+<img alt="Campo Fecha de Efectividad del Precio" src="../../../_images/fecha1.png" />
+<p class="caption"><span class="caption-text">Imagen 54. Campo Fecha de Efectividad del Precio</span><a class="headerlink" href="#id54" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Precio OC</strong>”, el precio unitario del producto para una orden de compra.</p>
+<div class="figure align-default" id="id55">
+<img alt="Campo Precio OC" src="../../../_images/precioc.png" />
+<p class="caption"><span class="caption-text">Imagen 55. Campo Precio OC</span><a class="headerlink" href="#id55" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Seleccione en el campo “<strong>UM</strong>”, la unidad de medida para realizar la compra del producto que esta registrando.</p>
+<div class="figure align-default" id="id56">
+<img alt="Campo UM" src="../../../_images/umcompras.png" />
+<p class="caption"><span class="caption-text">Imagen 56. Campo UM</span><a class="headerlink" href="#id56" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Mínimo a Ordenar</strong>”, la cantidad mínima a ordenar en la unidad de medida seleccionada del producto que esta registrando.</p>
+<div class="figure align-default" id="id57">
+<img alt="Campo Mínimo a Ordenar" src="../../../_images/ordenarmi.png" />
+<p class="caption"><span class="caption-text">Imagen 57. Campo Mínimo a Ordenar</span><a class="headerlink" href="#id57" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Múltiplo a Ordenar</strong>”, el número de productos que contiene la unidad de medida seleccionada.</p>
+<div class="figure align-default" id="id58">
+<img alt="Campo Múltiplo a Ordenar" src="../../../_images/ordenarma.png" />
+<p class="caption"><span class="caption-text">Imagen 58. Campo Múltiplo a Ordenar</span><a class="headerlink" href="#id58" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Tiempo de Entrega Prometido</strong>”, el número de días existentes entre la fecha de la orden y la fecha prometida de la entrega.</p>
+<div class="figure align-default" id="id59">
+<img alt="Campo Tiempo de Entrega Prometido" src="../../../_images/entregapro.png" />
+<p class="caption"><span class="caption-text">Imagen 59. Campo Tiempo de Entrega Prometido</span><a class="headerlink" href="#id59" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Costo por Orden</strong>”, el costo por la orden para el producto que esta registrando.</p>
+<div class="figure align-default" id="id60">
+<img alt="Campo Costo por Orden" src="../../../_images/costo2.png" />
+<p class="caption"><span class="caption-text">Imagen 60. Campo Costo por Orden</span><a class="headerlink" href="#id60" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p>Seleccione el icono “<strong>Guardar Cambios</strong>” en la barra de herramientas de ADempiere.</p>
+<div class="figure align-default" id="id61">
+<img alt="Icono Guardar Cambios" src="../../../_images/guardarco.png" />
+<p class="caption"><span class="caption-text">Imagen 61. Icono Guardar Cambios</span><a class="headerlink" href="#id61" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="pestana-precio">
+<h2><span class="section-number">2.2.1.2. </span><strong>Pestaña Precio</strong><a class="headerlink" href="#pestana-precio" title="Permalink to this headline">¶</a></h2>
+<p>En esta ventana se registran las listas de precios utilizadas por la empresa, con sus diferentes precios de lista, límite y estándar que poseen los productos, con la finalidad de ser utilizada al momento de realizar alguna compra / venta con los mismos. Cada uno de los campos con el símbolo (*) son obligatorios para el registro.</p>
+<ol class="arabic">
+<li><p>Seleccione la pestaña “<strong>Precio</strong>”, ubicada del lado izquierdo de la ventana “<strong>Producto</strong>” y proceda al llenado de los campos correspondientes.</p>
+<div class="figure align-default" id="id62">
+<img alt="Pestaña Precio" src="../../../_images/lineaprecios.png" />
+<p class="caption"><span class="caption-text">Imagen 62. Pestaña Precio</span><a class="headerlink" href="#id62" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Seleccione en el campo “<strong>Versión de Lista de Precios</strong>”, la lista de precios que será utilizada para el producto que esta registrando.</p>
+<div class="figure align-default" id="id63">
+<img alt="Campo Versión de Lista de Precios" src="../../../_images/preciov.png" />
+<p class="caption"><span class="caption-text">Imagen 63. Campo Versión de Lista de Precios</span><a class="headerlink" href="#id63" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p>Seleccione el icono “<strong>Guardar Cambios</strong>” en la barra de herramientas de ADempiere.</p>
+<div class="figure align-default" id="id64">
+<img alt="Icono Guardar Cambios" src="../../../_images/guardarpre.png" />
+<p class="caption"><span class="caption-text">Imagen 64. Icono Guardar Cambios</span><a class="headerlink" href="#id64" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="pestana-conversion-unidad-de-medida">
+<h2><span class="section-number">2.2.1.3. </span><strong>Pestaña Conversión Unidad de Medida</strong><a class="headerlink" href="#pestana-conversion-unidad-de-medida" title="Permalink to this headline">¶</a></h2>
+<p>En esta ventana se registran las conversiones de las diferentes unidades de medida utilizadas por la empresa, con la finalidad de aplicar dichas conversiones al momento de realizar alguna compra / venta de un producto. Cada uno de los campos con el símbolo (*) son obligatorios para el registro.</p>
+<ol class="arabic">
+<li><p>Seleccione la pestaña “<strong>Conversión Unidad de Medida</strong>”, ubicada del lado izquierdo de la ventana “<strong>Producto</strong>” y proceda al llenado de los campos correspondientes.</p>
+<div class="figure align-default" id="id65">
+<img alt="Pestaña Conversión Unidad de Medida" src="../../../_images/lineamedida.png" />
+<p class="caption"><span class="caption-text">Imagen 65. Pestaña Conversión Unidad de Medida</span><a class="headerlink" href="#id65" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Seleccione en el campo “<strong>UM Destino</strong>”, la unidad de medida a la cual será realizada la conversión.</p>
+<div class="figure align-default" id="id66">
+<img alt="Campo UM Destino" src="../../../_images/umdestino.png" />
+<p class="caption"><span class="caption-text">Imagen 66. Campo UM Destino</span><a class="headerlink" href="#id66" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Introduzca en el campo “<strong>Factor de Destino a Base</strong>”, el número de productos que contiene la unidad de medida seleccionada.</p>
+<div class="figure align-default" id="id67">
+<img alt="Pestaña Conversión Unidad de Medida" src="../../../_images/factor.png" />
+<p class="caption"><span class="caption-text">Imagen 67. Campo Factor de Destino a Base</span><a class="headerlink" href="#id67" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p>Seleccione el icono “<strong>Guardar Cambios</strong>” en la barra de herramientas de ADempiere.</p>
+<div class="figure align-default" id="id68">
+<img alt="Icono Guardar Cambios" src="../../../_images/guardaruni.png" />
+<p class="caption"><span class="caption-text">Imagen 68. Icono Guardar Cambios</span><a class="headerlink" href="#id68" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../quality-management/index.html" class="btn btn-neutral float-right" title="3. Gestión de Calidad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="2.2. Producto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, ADempiere ERP
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: 
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+       <strong> <dd><a href="/master/">latest</a></dd>
+        <dd><a href="/4.0.0/">4.0.0</a></dd>
+        <dd><a href="/adempiere-3.7/">ADempiere-3.7</a></dd> </strong> 
+       
+      </dl>
+     
+    <hr/>
+    
+ 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,4976 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Rol &mdash; ERPYA 1.0 Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> ERPYA
+          
+
+          
+            
+            <img src="../../_static/ERP_Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+<h2>Tabla de Contenido</h2>
+
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN ESTÁNDAR</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/standard-procedures/index.html"><strong>Procedimientos Estándares</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/openproject/index.html">1. <strong>Open Project</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/slack/index.html">2. <strong>Slack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/rst/index.html">3. <strong>Herramienta RestructuredText</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/basic-steps/index.html">1. <strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/master/index.html">2. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/quality-management/index.html">3. <strong>Gestión de Calidad</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/material-management/index.html">4. <strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/production-management/index.html">5. <strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/distribution-management/index.html">6. <strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/quote-to-invoice/index.html">7. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/pos-management/index.html">8. <strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/requisition-to-invoice/index.html">9. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/returns/index.html">10. <strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/open-items/index.html">11. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/loan-management/index.html">12. <strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/human-resources-management/index.html">13. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/asset-management/index.html">14. <strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/performance-analysis/index.html">15. <strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">1. <strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fiscal-printer/index.html">2. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procedures/index.html">3. <strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../report/index.html">4. <strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+</ul>
+
+            
+          
+<h2>Otros</h2>
+<ul>
+<li><a href="../../contributing.html"></a></li>
+</ul>
+
+<h2>Para Mayor Información</h2>
+<ul>
+<li><a href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a></li>
+<li><a href="https://github.com/erpcya/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Download Docs</a></li>
+</ul>
+
+<ul class="ethical-sidebar">
+    <li>
+        <a class="ethical-content" href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                <img src="https://assets.readthedocs.org/sustainability/readthedocs-logo-fs8.png">
+        </a>
+        
+        <li>
+            <a href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                Repositorios Privados y Soporte Prioritario!
+                
+                <br \>
+                    
+                Intenta leer los documentos para negocios hoy!
+                            
+            </a>
+        </li>
+    </li>
+</ul>
+
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ERPYA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><strong>Rol</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/lve/document-utility/roles.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="rol">
+<span id="documento-rol"></span><h1><strong>Rol</strong><a class="headerlink" href="#rol" title="Permalink to this headline">¶</a></h1>
+<p>Un rol en una organización o compañía se refiere a las actividades, funciones y acciones que son desarrolladas, ejecutadas o realizadas por una persona determinada.</p>
+<p>Esta documentación está destinada a definir la utilidad de cada uno de los roles que controlan el acceso a las ventanas, tareas, informes y transacciones de las diferentes gestiones que contempla ADempiere, donde un rol de administrador y de usuario son predefinidos.</p>
+<p>Con la finalidad de mantener las responsabilidades del usuario y para controlar el acceso a la funcionalidad específica o datos, los usuarios de ADempiere son adicionados a los roles previamente configurados según sus responsabilidades en la organización o compañía. Es importante seguir al pie de la letra cada uno de los procedimientos descritos aquí recuerde que de eso dependerá el buen uso del ERP.</p>
+<div class="section" id="definicion-estandar-de-los-roles-en-adempiere">
+<h2><strong>Definición Estándar de los Roles en ADempiere</strong><a class="headerlink" href="#definicion-estandar-de-los-roles-en-adempiere" title="Permalink to this headline">¶</a></h2>
+<p>En ADempiere la definición de los roles depende de las actividades que desempeña el posible usuario de la organización o compañía para el cual es configurado, dicha configuración es realizada por los consultores de <strong>E.R.P. Consultores y Asociados, C.A</strong>, para aclarar dudas o inquietudes con respecto a la documentación se sugiere que contacte a un consultor.</p>
+<p>Para la localización de ADempiere en Venezuela, se encuentran configurados los roles en función de las actividades que desempeñan los usuarios en las diferentes organizaciones que utilizan el servicio. Cada rol contempla un nivel de acceso y puede generar una acción en los documentos involucrados en sus actividades o flujo de trabajo.</p>
+<div class="section" id="analista-de-almacen">
+<h3><strong>Analista de Almacén</strong><a class="headerlink" href="#analista-de-almacen" title="Permalink to this headline">¶</a></h3>
+<p>En una empresa el analista de almacén tiene la función de planear, coordinar, realizar y controlar las operaciones de despacho y manejo de los materiales, llevando un control de las requisiciones de pedido, actualizando diariamente el inventario, manejando los registros de los bienes bajo resguardo en el almacén.</p>
+<p>Algunas de las actividades de un analista de almacén dentro de la empresa son las siguientes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Recibir, verificar y almacenar para su cuidado y protección todos los materiales y suministros.</p></li>
+<li><p>Inspeccionar y controlar que todos los materiales y suministros estén almacenados en el lugar correspondiente y bajo las condiciones que le han sido asignadas.</p></li>
+<li><p>Apoyar en el control y actualización del inventario, procesando los despachos en el sistema.</p></li>
+<li><p>Despachar materiales a los departamentos que los requieran, elaborando la nota de entrega en el sistema, aplicando una previa verificación de cantidad, calidad y especificaciones indicadas en la requisición de materiales.</p></li>
+<li><p>Solicitar al analista de compras los materiales que no tengan existencia en almacén y velar por su recepción.</p></li>
+<li><p>Procesar diariamente en el sistema las notas de recepción de los materiales recibidos, para tener disponibilidad en el inventario.</p></li>
+<li><p>Realizar los movimientos de traslado entre almacenes en el sistema, de aquellos artículos que lo requieran.</p></li>
+</ol>
+</div></blockquote>
+<p>Como consecuencia de las actividades que realiza el analista de almacén, es creado y configurado su rol con las siguientes indicaciones principales.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 56%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Almacén</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de almacén puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Adicional a ello, el rol permite tener acceso a las siguientes ventanas necesarias para realizar las actividades correspondientes al puesto de analista de almacén.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Producto</strong></p></li>
+<li><p><strong>Inventario Físico</strong></p></li>
+<li><p><strong>Entregas (Cliente)</strong></p></li>
+<li><p><strong>Movimiento de Inventario</strong></p></li>
+<li><p><strong>Recepción de Productos</strong></p></li>
+<li><p><strong>Paquete</strong></p></li>
+<li><p><strong>Confirmación Entrega/Recepción</strong></p></li>
+<li><p><strong>Confirmación de Movimientos</strong></p></li>
+<li><p><strong>Devolución Cliente</strong></p></li>
+<li><p><strong>Devolución a Proveedor</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para obtener una buena gestión en la organización deben se acatadas las normativas de la compañía, cumpliendo además con cada una de las actividades indicadas anteriormente. La definición del rol de la persona en la compañía u organización, debe ser precisa y detallada para evitar consecuencias negativas en el desarrollo de las actividades.</p>
+</div>
+</div>
+<div class="section" id="analista-de-cobranza">
+<h3><strong>Analista de Cobranza</strong><a class="headerlink" href="#analista-de-cobranza" title="Permalink to this headline">¶</a></h3>
+<p>El objetivo de un analista de cobranza en una empresa es elaborar un análisis de capacidad de pago de nuevos clientes de crédito. Además, de mantener el orden en el cobro y pago de las facturas pendientes.</p>
+<p>Dentro de las actividades realizadas por el analista de cobranza en una organización se encuentran las siguientes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Elaborar los perfiles crediticios de posibles clientes de acuerdo a su capacidad de pago.</p></li>
+<li><p>Realizar los estudios crediticios de los nuevos clientes, utilizando los sistemas designados para este fin.</p></li>
+<li><p>Comprobar las referencias comerciales de los nuevos clientes y realizar las anotaciones al expediente del cliente.</p></li>
+<li><p>Elaborar los comunicados de aceptación o negación del crédito a los nuevos clientes.</p></li>
+<li><p>Elaborar los expedientes de cada uno de los Clientes de Crédito, adjuntando la documentación inicial y revisar que esté completa.</p></li>
+<li><p>Digitar las facturas de las nuevas compras de los clientes de la semana. Realizando la actualización de los estados de cuenta de cada uno de los clientes.</p></li>
+<li><p>Digitar las cancelaciones de las facturas o trámites que realicen los clientes durante la semana/mes.</p></li>
+<li><p>Documentar todas las cuentas por cobrar y los recibos de los trámites cancelados, para ser enviados a el contador de la empresa.</p></li>
+<li><p>Elaborar el reporte de control de los cobros contra facturación.</p></li>
+<li><p>Realizar las labores de cobro posterior al vencimiento de las facturas, de manera que se haga una proyección de cobros.</p></li>
+</ol>
+</div></blockquote>
+<p>El rol del mismo es creado y configurado en base a dichas actividades en la organización, considerando los siguientes puntos principales.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 0%" />
+<col style="width: 11%" />
+<col style="width: 2%" />
+<col style="width: 65%" />
+<col style="width: 11%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p><strong>Rol</strong></p></td>
+<td colspan="2"><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td colspan="5"><p>Analista de Cobranza|Compañía + Organización|El analista de cobranza puede crear y generar documentos en estado <strong>Borrador</strong>, <strong>Preparar</strong> y <strong>Completar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>La persona con el rol de analista de cobranza puede acceder a las siguientes ventanas para realizar las actividades correspondientes a su puesto.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Socio del Negocio</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La configuración del rol permite que la persona pueda acceder sólo a la información que necesita para realizar su gestión correctamente.</p>
+</div>
+</div>
+<div class="section" id="analista-de-compras">
+<h3><strong>Analista de Compras</strong><a class="headerlink" href="#analista-de-compras" title="Permalink to this headline">¶</a></h3>
+<p>En cuanto a la función que cumple el analista de compras en una organización, el rol del mismo da acceso a la información pertinente para el desarrollo de las actividades necesarias por parte de la persona encargada de asegurar la correcta adquisición de bienes y servicios, que permitan el desarrollo de las actividades planteadas para la ejecución de los objetivos de la unidad.</p>
+<p>Algunas de las actividades con respecto al rol del analista de compras en una organización son las siguientes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Responsable del proceso de gestión, selección, calificación, asignación de código, desarrollo y evaluación de desempeño de los proveedores.</p></li>
+<li><p>Garantizar la optimización del abastecimiento de los bienes y servicios catalogados como indirectos, buscando  mejoras en los procesos y apoyando en la solución de problemas de abastecimiento.</p></li>
+<li><p>Trabajar en conjunto con las unidades de negocio y proveedores para identificar nuevos bienes y servicios para una mejora en costo, imagen, calidad  y funcionalidad.</p></li>
+<li><p>Realizar matriz de riesgo en cada nueva alta de un proveedor.</p></li>
+<li><p>Administrar  y coordinar  los contratos de compra de bienes y/o servicios con las áreas involucradas directamente en el proceso.  Entiéndase por administrar: términos de la negociación y  plazo o vigencia.</p></li>
+<li><p>Mediar en la resolución de problemas relacionados con los proveedores en: términos de pago, interpretación de contratos (negociaciones), garantías, tiempos de entrega, rechazos de calidad, etc.</p></li>
+<li><p>Proporcionar la documentación necesaria para la definición del proveedor, que permita al usuario generar la requisición de compra en el sistema.</p></li>
+<li><p>Validar los documentos de soporte de la requisición autorizada para la emisión y envío  de  la orden de compra al proveedor de bienes y/o servicios. La posición también interactúa en la creación de presupuestos anuales de todas las áreas del negocio (Gastos)</p></li>
+<li><p>Responsable de generar ahorros o beneficios  en todos los procesos de negociación para la  adquisición de bienes y/o servicios.</p></li>
+<li><p>Generar, analizar y administrar reportes de ahorro y gastos para la búsqueda e identificación de oportunidades de mejorar la rentabilidad de la empresa.</p></li>
+<li><p>Plantear y desarrollar proyectos que generen beneficios para la  optimización de recursos de la compañía.</p></li>
+</ol>
+</div></blockquote>
+<p>La configuración del rol es basada en los siguientes puntos principales y las actividades nombradas anteriormente.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 16%" />
+<col style="width: 57%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Compras</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de cobranza puede crear y generar documentos enestado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>De igual forma, el rol le permite al analista de compras acceder a las siguientes ventanas para ejecutar sus actividades de forma exitosa.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Socio del Negocio</strong></p></li>
+<li><p><strong>Producto</strong></p></li>
+<li><p><strong>Lista de Percios</strong></p></li>
+<li><p><strong>Órdenes de Compra</strong></p></li>
+<li><p><strong>Solicitud para Cotización</strong></p></li>
+<li><p><strong>Requisición</strong></p></li>
+<li><p><strong>Solicitud para Cotización (Con Respuesta)</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La creación y definición de una buena estructura de roles es la base del comportamiento laboral de los trabajadores, reflejada en el desarrollo y funcionamiento de la organización.</p>
+</div>
+</div>
+<div class="section" id="analista-de-contabilidad">
+<h3><strong>Analista de Contabilidad</strong><a class="headerlink" href="#analista-de-contabilidad" title="Permalink to this headline">¶</a></h3>
+<p>El analista de contabilidad debe mantener actualizados los libros contables de una organización, todas las actividades que parten de dicho proceso de actualización deben ser realizadas bajo la supervisión de un contador para garantizar el funcionamiento administrativo de la organización.</p>
+<p>El proceso de actualización de libros contables puede ser realizado correctamente con la ejecución de algunas actividades nombradas a continuación.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Recibir y verificar las facturas de proveedores con la finalidad de validar el cumplimiento de los deberes formales.</p></li>
+<li><p>Registrar en el sistema las facturas verificadas (anticipos, obligaciones legales, pre-pagados, activos fijos) con la finalidad de generar la información para Impuestos y Tesorería.</p></li>
+<li><p>Registrar en el sistema las facturas por gastos de caja chica de las sede principal y sucursales.</p></li>
+<li><p>Emitir Comprobantes de Retención de IVA e ISLR a los proveedores.</p></li>
+<li><p>Analizar y revisar la estructura de cuentas por pagar de la empresa.</p></li>
+<li><p>Validar los datos maestros para la creación y modificación de los códigos de clientes con la finalidad de que dichos códigos cumplan con las condiciones de negociación establecidas.</p></li>
+<li><p>Realizar los procesos de cierres mensuales.</p></li>
+<li><p>Otras funciones encomendadas por el jefe inmediato.</p></li>
+</ol>
+</div></blockquote>
+<p>La configuración del rol del analista de contabilidad es realizada en base a su función en la organización.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 65%" />
+<col style="width: 10%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Contabilidad</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de contabilidad puede crear y generar documentos en estado <strong>Preparar</strong>, <strong>Completar</strong> y <strong>Reversar-Corregir</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Considerando cada una de las actividades que el mismo debe realizar en la organización, se le permite visualizar sólo las ventanas involucradas en el proceso que debe realizar para ejecutar su función de forma correcta.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Selección de Pago</strong></p></li>
+<li><p><strong>Ordenes de Producción Planeadas</strong></p></li>
+<li><p><strong>Retención Generada</strong></p></li>
+<li><p><strong>Requisición</strong></p></li>
+<li><p><strong>Costos de Producto</strong></p></li>
+<li><p><strong>Informe Financiero</strong></p></li>
+<li><p><strong>Devolución a Proveedor</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Devolución Cliente</strong></p></li>
+<li><p><strong>Categoría de Producto</strong></p></li>
+<li><p><strong>Documentos por Cobrar</strong></p></li>
+<li><p><strong>Inventario Físico</strong></p></li>
+<li><p><strong>Entregas (Cliente)</strong></p></li>
+<li><p><strong>Movimiento de Inventario</strong></p></li>
+<li><p><strong>Recepción de Productos</strong></p></li>
+<li><p><strong>Producción</strong></p></li>
+<li><p><strong>Estado de Cuentas Bancario</strong></p></li>
+<li><p><strong>Pago/Cobro</strong></p></li>
+<li><p><strong>Consulta de Asignación</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Documentos por Pagar</strong></p></li>
+<li><p><strong>Órdenes de Venta</strong></p></li>
+<li><p><strong>Grupo de Socios del Negocio</strong></p></li>
+<li><p><strong>Socio del Negocio</strong></p></li>
+<li><p><strong>Dimensiones Contables</strong></p></li>
+<li><p><strong>Elemento Contable</strong></p></li>
+<li><p><strong>Banco</strong></p></li>
+<li><p><strong>Condición de Pago</strong></p></li>
+<li><p><strong>Órdenes de Compra</strong></p></li>
+<li><p><strong>Órdenes de Compra Asignadas a Recibos y Facturas</strong></p></li>
+<li><p><strong>Facturas Asignadas a Recepciones</strong></p></li>
+<li><p><strong>Remesa de Pagos</strong></p></li>
+<li><p><strong>Producto</strong></p></li>
+<li><p><strong>Tipo de Conversión</strong></p></li>
+<li><p><strong>Tasa de Cambio</strong></p></li>
+<li><p><strong>Documentos sin Aplicar</strong></p></li>
+<li><p><strong>Cargo</strong></p></li>
+<li><p><strong>Diario Contable</strong></p></li>
+<li><p><strong>Asientos Contables</strong></p></li>
+<li><p><strong>Log de Retención</strong></p></li>
+<li><p><strong>Registro de Peso (Todos)</strong></p></li>
+<li><p><strong>Proceso Nómina</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los roles determinan el nivel de jerarquía que tienen las personas de la organización en función de su estatus en la misma.</p>
+</div>
+</div>
+<div class="section" id="analista-de-control-de-calidad">
+<h3><strong>Analista de Control de Calidad</strong><a class="headerlink" href="#analista-de-control-de-calidad" title="Permalink to this headline">¶</a></h3>
+<p>El analista de calidad de una organización debe garantizar la calidad de los procesos que son ejecutados en la misma y que generan una producción acorde a las necesidades del cliente. Adicional a ello, debe estar siempre alerta para identificar de forma temprana los errores o problemas que sean presentados durante el proceso de desarrollo o producción de la organización y de esta manera mantener un control de la producción y asegurar la calidad del mismo.</p>
+<p>Para el cumplimiento de la función del analista de calidad, la persona debe realizar diferentes antividades entre las cuales se encuentran las siguientes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Realizar auditoría de calidad de productos a proveedores externos de acuerdo a las normas establecidas por la organización.</p></li>
+<li><p>Informar al gerente de planta oportunamente resultados de auditoria interna y proponer plan correctivo a las debilidades detectadas en la auditoria</p></li>
+<li><p>Auditar todo el proceso de recepción de mercancías de proveedores en planta.</p></li>
+<li><p>Garantizar que los productos vencidos o con problemas de calidad estén en cuarentena o aislados de productos que están en buenas condiciones.</p></li>
+<li><p>Garantizar las buenas prácticas de manufactura en los procesos internos de producción de la planta.</p></li>
+</ol>
+</div></blockquote>
+<p>Considerando la función de un analista de control de calidad en una organización, su rol es configurado tomando en cuenta los siguientes puntos principales.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 14%" />
+<col style="width: 56%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Control de Calidad</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de control de calidad puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>La configuración del rol de analista de control de calidad permite el acceso a las siguientes ventanas.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Producto</strong></p></li>
+<li><p><strong>Producción</strong></p></li>
+<li><p><strong>Análisis de Calidad</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los roles siempre van a variar dependiendo de los procesos que se ejecuten en la compañía u organización.</p>
+</div>
+</div>
+<div class="section" id="analista-de-cxc">
+<h3><strong>Analista de CxC</strong><a class="headerlink" href="#analista-de-cxc" title="Permalink to this headline">¶</a></h3>
+<p>La función de un analista de cuentas por cobrar es elaborar un análisis de capacidad de pago de nuevos clientes de crédito. Además, de mantener el orden en el cobro y pago de las facturas pendientes.</p>
+<p>Adicional a ello, el mismo debe cumplir con una serie de actividades necesarias para cumplir con los objetivos previstos, algunas de ellas son:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Elaborar los perfiles crediticios de posibles clientes de acuerdo a su capacidad de pago.</p></li>
+<li><p>Realizar los estudios crediticios de los nuevos clientes, utilizando los sistemas designados para este fin.</p></li>
+<li><p>Comprobar las referencias comerciales de los nuevos clientes y realizar las anotaciones al expediente del cliente.</p></li>
+<li><p>Elaborar los comunicados de aceptación o negación del crédito a los nuevos clientes.</p></li>
+<li><p>Elaborar los expedientes de cada uno de los Clientes de Crédito, adjuntando la documentación inicial y revisar que esté completa.</p></li>
+<li><p>Digitar las facturas de las nuevas compras de los clientes de la semana. Realizando la actualización de los estados de cuenta de cada uno de los clientes.</p></li>
+<li><p>Digitar las cancelaciones de las facturas o trámites que realicen los clientes durante la semana/mes.</p></li>
+<li><p>Documentar todas las cuentas por cobrar y los recibos de los trámites cancelados, para ser enviados a el contador de la empresa.</p></li>
+<li><p>Elaborar el reporte de control de los cobros contra facturación.</p></li>
+<li><p>Realizar las labores de cobro posterior al vencimiento de las facturas, de manera que se haga una proyección de cobros.</p></li>
+</ol>
+</div></blockquote>
+<p>Basado en las actividades del analista de cuentas por cobrar, es configurado el rol considerando los siguientes puntos principales.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 60%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de CxC</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de cuentas por cobrar puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Posterior a ello, el mismo puede acceder sólo a la información necesaria para ejecutar sus actividades y cumplir con el objetivo previsto.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Documentos por Cobrar</strong></p></li>
+<li><p><strong>Producto</strong></p></li>
+<li><p><strong>Socio del Negocio</strong></p></li>
+<li><p><strong>Solicitud para Cotización</strong></p></li>
+<li><p><strong>Tasa de Cambio</strong></p></li>
+<li><p><strong>Órdenes de Venta</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-cxp">
+<h3><strong>Analista de CxP</strong><a class="headerlink" href="#analista-de-cxp" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 59%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de CxP</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de cuentas por pagar puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Devolución a Proveedor</strong></p></li>
+<li><p><strong>Documentos por Pagar</strong></p></li>
+<li><p><strong>Retención Generada</strong></p></li>
+<li><p><strong>Selección de Pago</strong></p></li>
+<li><p><strong>Socio del Negocio</strong></p></li>
+<li><p><strong>Producto</strong></p></li>
+<li><p><strong>Condición de Pago</strong></p></li>
+<li><p><strong>Log de Retención</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-logistica">
+<h3><strong>Analista de Logística</strong><a class="headerlink" href="#analista-de-logistica" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 16%" />
+<col style="width: 56%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Logística</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de logística puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Orden de Salida</strong></p></li>
+<li><p><strong>Orden de Flete</strong></p></li>
+<li><p><strong>Conductor</strong></p></li>
+<li><p><strong>Vehículo</strong></p></li>
+<li><p><strong>Transportista</strong></p></li>
+<li><p><strong>Transportistas y Vehículos</strong></p></li>
+<li><p><strong>Orden de Distribución</strong></p></li>
+<li><p><strong>Lista de Distribución</strong></p></li>
+<li><p><strong>Ejecutar Distribución</strong></p></li>
+<li><p><strong>Licencia de Transporte</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-nomina">
+<h3><strong>Analista de Nómina</strong><a class="headerlink" href="#analista-de-nomina" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 17%" />
+<col style="width: 56%" />
+<col style="width: 14%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Nómina</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de nómina puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Empleado</strong></p></li>
+<li><p><strong>Registro de Asistencia</strong></p></li>
+<li><p><strong>Selección de Pago</strong></p></li>
+<li><p><strong>Documentos por Pagar</strong></p></li>
+<li><p><strong>Proceso Nómina</strong></p></li>
+<li><p><strong>Órdenes de Compra</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-produccion">
+<h3><strong>Analista de Producción</strong><a class="headerlink" href="#analista-de-produccion" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 16%" />
+<col style="width: 56%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Producción</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de producción puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Producto</strong></p></li>
+<li><p><strong>Producción</strong></p></li>
+<li><p><strong>Plan de Reabastecimiento</strong></p></li>
+<li><p><strong>Ordenes de Producción Planeadas</strong></p></li>
+<li><p><strong>Movimiento de Inventario</strong></p></li>
+<li><p><strong>Orden de Distribución</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-reclutamiento">
+<h3><strong>Analista de Reclutamiento</strong><a class="headerlink" href="#analista-de-reclutamiento" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 16%" />
+<col style="width: 52%" />
+<col style="width: 14%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Reclutamiento</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de reclutamiento puede crear y generar documentos en estado</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Educación Laboral</strong></p></li>
+<li><p><strong>Tipo de Trabajo</strong></p></li>
+<li><p><strong>Oferta de Trabajo</strong></p></li>
+<li><p><strong>Solicitud de Empleo</strong></p></li>
+<li><p><strong>Tipo de Habilidad</strong></p></li>
+<li><p><strong>Nivel de Estudio</strong></p></li>
+<li><p><strong>Carrera</strong></p></li>
+<li><p><strong>Grado</strong></p></li>
+<li><p><strong>Nivel de Profesión</strong></p></li>
+<li><p><strong>Rango de Salario</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-recursos-humanos">
+<h3><strong>Analista de Recursos Humanos</strong><a class="headerlink" href="#analista-de-recursos-humanos" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 16%" />
+<col style="width: 52%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Recursos Humanos</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de recursos humanos puede crear y generar documentos en estado</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Nivel de Estudio</strong></p></li>
+<li><p><strong>Carrera</strong></p></li>
+<li><p><strong>Grado</strong></p></li>
+<li><p><strong>Contrato</strong></p></li>
+<li><p><strong>Departamento</strong></p></li>
+<li><p><strong>Puesto</strong></p></li>
+<li><p><strong>Tipo de Seguro</strong></p></li>
+<li><p><strong>Empleado</strong></p></li>
+<li><p><strong>Empleado (Todos)</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-romana">
+<h3><strong>Analista de Romana</strong><a class="headerlink" href="#analista-de-romana" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 17%" />
+<col style="width: 56%" />
+<col style="width: 14%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Romana</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de romana puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Registro de Peso</strong></p></li>
+<li><p><strong>Recibos Express</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-tesoreria">
+<h3><strong>Analista de Tesorería</strong><a class="headerlink" href="#analista-de-tesoreria" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 16%" />
+<col style="width: 56%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Tesorería</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de tesorería puede crear y generar documentos en estado <strong>Preparar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Pago/Cobro</strong></p></li>
+<li><p><strong>Estado de Cuentas Bancario</strong></p></li>
+<li><p><strong>Consulta de Asignación</strong></p></li>
+<li><p><strong>Documentos por Pagar</strong></p></li>
+<li><p><strong>Selección de Pago</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Banco</strong></p></li>
+<li><p><strong>Condición de Pago</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="analista-de-ventas">
+<h3><strong>Analista de Ventas</strong><a class="headerlink" href="#analista-de-ventas" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Analista de Ventas</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El analista de ventas puede crear y generar documentos en estado <strong>Preparar</strong> y <strong>Completar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Socio del Negocio</strong></p></li>
+<li><p><strong>Producto</strong></p></li>
+<li><p><strong>Órdenes de Venta</strong></p></li>
+<li><p><strong>Lista de Precios</strong></p></li>
+<li><p><strong>Orden de Devolución (Cliente)</strong></p></li>
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="autogestion">
+<h3><strong>Autogestión</strong><a class="headerlink" href="#autogestion" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Autogestión</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El rol de autogestión puede crear y generar documentos en estado <strong>Preparar</strong> y <strong>Completar</strong>.</p></td>
+<td><p>Autogestión</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Solicitud</strong></p></li>
+<li><p><strong>Inventario uso Interno</strong></p></li>
+<li><p><strong>Mi Perfil</strong></p></li>
+<li><p><strong>Mi Empleado</strong></p></li>
+<li><p><strong>Caja</strong></p></li>
+<li><p><strong>Cierre de Caja</strong></p></li>
+<li><p><strong>Solicitud de Permiso</strong></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Compañía Estándar Admin</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 42%" />
+<col style="width: 37%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Compañía Estándar Admin</p></td>
+<td><p>Compañía + Organización</p></td>
+<td><p>El rol de compañía estándar admin puede crear y generar documentos en estado <strong>Completar</strong>.</p></td>
+<td><p>No posee un rol incluido por ser el rol estándar con acceso a todo en ADempiere.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Canal Nuevo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ver Charla</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Item media</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Charla</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Acceso Web</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Servidor Web de Publicaciones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Índice de Texto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Detener Índice de Texto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Log de Texto de Búsqueda</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Mantenimiento de Paquetes</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Exportar Paquete (PackOut)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar un paquete (PackIn)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Menú</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Facturas Asignadas a Recepciones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Usuario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Compañía</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Organización</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Rol</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Secuencia de Documentos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Flujo de Trabajo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tarea</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Moneda</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tasa de Cambio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Año Calendario y Período</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Elemento Contable</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Unidad de Medida</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Localización</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>País, Región y Ciudad</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Socio del Negocio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Esquema Contable</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Anexo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Preferencia</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Configurar Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría Contable</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Diario Contable</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Actividad (ABC)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo de Documento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tasa de Impuesto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Impuesto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Almacén y Ubicaciones</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Condición de Pago</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transportista</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Órdenes de Venta</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Categoría de Producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lista de Precios</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Programa de Facturación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Campaña de Mercadeo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Canal de Mercadeo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Región de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Combinación de Cuentas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Presupuesto Contable</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Banco</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Morosidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Retención (1099)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cargo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Asientos Contables</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Árbol e Imagen de Nodo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Documentos por Cobrar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Inventario Físico</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Entregas (Cliente)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Movimiento de Inventario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Socios del Negocio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Reconocimiento de Ingresos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Inventario Perpetuo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Detalles del Proveedor</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Saludo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Órdenes de Compra</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Documentos por Pagar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Recepción de Productos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de EDI</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transacción de EDI</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Mensaje de Error</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Formato de Importación de Datos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Producción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Socios del Negocio</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Aviso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estado de Cuentas Bancario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Pago/Cobro</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Atributo Personalizado</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Caja Chica</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Diario de Caja Chica</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Solicitud</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Procesador de Solicitudes</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Plantilla de Correo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Consulta de Asignación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Selección de Pago</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Comisiones</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Ciclo de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cálculo de Comisiones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Objetivo de Desempeño</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cálculo de Medida de Desempeño</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Medida de Desempeño</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Informe Financiero</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Columna de Informe</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Línea de Informe</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Nivel de Servicio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Encontrar (uso indirecto)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transacciones de Materiales (uso indirecto)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Forma de Impresión</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Imagen del Sistema</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Órdenes de Compra Asignadas a Recibos y Facturas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ventana de Usuario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Todas las Solicitudes</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Esquema de Descuento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Gasto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Informe de Gasto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Recurso</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo de Recurso de Manufactura</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Color de Impresión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Fuente de Impresión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Formato de Impresión</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Papel de Impresión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Gastos (por Facturar)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Formato de Impresión de la Tabla</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Solicitud</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Área de Interés</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Productos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Cuenta Contable</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Conjunto de Líneas de Informe</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Activo Fijo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Activo Fijo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entrenamiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Gastos (No Reembolsables)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Transacciones de Balances Contables</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Conjunto de Atributos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lote</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Control de Lote</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Control No. de Serie</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Atributos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Búsqueda de Atributo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Factura de Gastos (Alfa)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Imprimir Etiqueta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Sesión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Documento Recurrente</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Importar Inventario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Acceso a Datos de Roles</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Anuncio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Histórico de Cambios</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo de Costo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Hora</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Clic</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Contador Web</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Programa de Pagos de Facturas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Alerta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Estado de Cuentas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Diario Contable</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Importar Documentos CxC/CxP</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Pagos/Cobros</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Ordenes</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Fletes</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Dimensiones Contables</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Replicación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estrategia de Replicación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Proyecto (Orden)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Categoría Conocimiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Base de Conocimiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Inicio Conocimiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Sinónimo Conocimiento</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Información de Socio del Negocio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Etiqueta de Impresión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Información de Agentes de la Compañía</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Documentos sin Aplicar</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo de Conversión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Tasa de Cambio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Proceso de Flujo de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Actividad de Flujo de Trabajo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Responsable del Flujo de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Registrar Atributos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Registro</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Algoritmo para Conciliación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Remesa de Pagos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Organización</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Programador de Procesos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Procesador de Flujos de Trabajo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tema de Subasta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Tema de Subasta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Vendedor de la Subasta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Comprador de la Subasta</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Procesador de Contabilidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Procesador de Alertas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Relación Socios del Negocio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tema de Solicitud para Cotización</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Solicitud para Cotización</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Suscripción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Suscripción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lista de Distribución</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Paquete</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Autorización de Devolución de Cliente</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cálculo de Morosidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Requisición</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Distribución Contable</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Solicitud para Cotización (Con Respuesta)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ejecutar Distribución</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Acceso al Log</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Contra Documentos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Pronóstico de Venta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Demanda</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Confirmación Entrega/Recepción</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tipo de Autorización de Devolución</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Auditoría de Procesos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Confirmación de Movimientos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Confirmación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Criterio ANS</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>ANS por Socio del Negocio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Esquema de Lista de Precios</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Terminal PDV</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>PDV de Llave de Disposición</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Inventario uso Interno</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Facturas por Lote</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Elemento de Costo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Costos de Producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de la Solicitud</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Solicitud</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Respuesta de Solicitud</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Respuesta Estándar de Solicitud</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estado de Solicitud</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tienda Web</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Posición</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Categoría de Posición</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Renumeración</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>LDM de producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Aviso de Cambio de LDM</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Aviso de Cambio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ajuste Instancia de Atributos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Declaración de Impuestos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Informe por Jerarquías</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Control de Presupuesto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Fondos de Contabilidad General(Alpha)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Informe Versión Sistema</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Esquema de Color del Desempeño</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Desempeño Punto de Control</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Relación de Desempeño</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Recomendación de Evento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estado del Evento</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Evento Conocido</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entregas al Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Usuario del Evento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Sistema de Evento</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Proyecto Web</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Plantilla</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Administración Web de AD</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configurador del Sistema</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Consola de Editor de Contenido</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Menú de Rol Web POS</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Propiedades Web POS</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cheques con Orden de No Cobro (Web POS)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Recurso de Manufactura</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Flujos Trabajo de Manufactura</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lista de Materiales y Fórmula</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Datos de Planificación del Producto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Avisos del MRP</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Orden de Manufactura</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Partes de Repuesto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Informe Control de Actividades</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Orden de Distribución</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Especificaciones de Calidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Colector de Costos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Módulos SaaS Suscritos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Regla</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Red de Distribución</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Impuestos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Impuestos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tasa Impuesto Padre</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo Impuesto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Impuesto Base</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Formato de Exportación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Procesador de Exportación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Procesador de Exportación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Procesador de Importación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Procesador de Importación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Contrato</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Departamento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Puesto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Catálogo de Conceptos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Proceso Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Conceptos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tipo Lista Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lista Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Histórico de Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Procesamiento de Revaluación de Activos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Índice de Revaluación de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entrada de Transferencia de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entrada de Disposición de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Disposición de Activos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Transferencias de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entrada para Dividir un Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Construir Archivo de Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Calculo depreciación acumulada</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Construir Pronóstico de Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo Propagación Período Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Métodos de Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tablas de Depreciación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Convenciones Depreciación Primer Año</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Método de Cálculo de Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Cargo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ver Registros MRP</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Terminal PDV Web</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Servicio de Seguridad web</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Listas de Precios</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Flujo de Efectivo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Grupo Promoción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Promoción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definir Cubo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Todos los Avisos de MRP</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Mis Documentos sin Procesar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Todos los Documentos sin Procesar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Consulta Inteligente</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Vistas</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Orden de Salida</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estructura del Almacén</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Area del Almacén</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Sección del Almacén</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Definición de Entradas / Salidas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Reglas de Entradas / Salidas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estrategia de Entradas / Salidas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Devolución Cliente</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Devolución a Proveedor</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Autorización de Devolución a Proveedor</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Mi Perfil</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Origen de las Órdenes de Venta</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo Relación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Selección de Pago (RRHH)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Retención</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Movimientos de Nómina</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Importar Planificación de Producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Adición de Activos de Fijos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Activación o Disposición de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Asset Change Account</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Asset Class</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Asset Funding Mode</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Revaluation Asset</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Asset Type</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Importar Activos Fijos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Movimientos de Inventario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Fact Reconciliation</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Producción (Un Solo Producto)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Parts and BOMs</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Lista de Materiales y Fórmulas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Prueba de Calidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Partes</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Memo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Contactos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cliente Potencial</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Etapa de la Venta</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Oportunidad de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tablero de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Clientes</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Flujo de Trabajo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Product Classification</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Product Class</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Product Group</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Historial de Ventas</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Calendario de Operaciones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Historico de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ejecución simulación del pronóstico</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Regla del Pronóstico</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Definición del Pronóstico</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Pronóstico</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Vista de demandas del MRP</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Vista de Suministros del MRP</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Recibos Express</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Análisis de Calidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Stocktake (indirect use)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Presupuesto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>GL Journal</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Turno de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Designación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Turno</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Grupo de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Nivel de Estudio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Seguro</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Carrera</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Grado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estructura Salarial</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Mi Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Habilidad</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Estructura de la Compañía</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Relación de Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Nivel de Profesión</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Educación Laboral</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Solicitud de Empleo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Oferta de Trabajo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Rango de Salario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Empleado (Todos)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Motivo del Permiso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Permiso</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Importar Producto ASI</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tareas pendientes</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar atributos del Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Plan de Reabastecimiento</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo de Concepto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ordenes de Producción Planeadas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configuración de Correo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Dispositivo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Configuración de Dispositivo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Documento Fiscal</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Datos de Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Comisión</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Movimiento al Presupuesto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Requisito de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transportistas y Vehículos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Orden de Flete</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Vehículo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Vehículo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Unidad de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Unidad de Transporte</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Compartimiento de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Compatibilidad de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Licencia de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Licencia de Transporte</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tipo de Requisito de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Conductor</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>List Type (LVE)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>List Configuration (LVE)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo de Solicitud Estándar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Clase de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Proyecto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Proyectos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría del Status de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Diario de Caja</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Caja</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Cierre de Caja</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Tarea de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Import Project</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Miembro de Proyecto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Procesador de Proyectos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configuración de Reporte de Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Funcionalidad Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Producto Financiero</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Producto Financiero</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Acuerdo Financiero</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Acuerdo Financiero</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Estado de Inversión o Préstamo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Cuenta Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lote de Transacción Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transacción Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tasa Financiera</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Préstamo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Morosidad de Préstamo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Transacción Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Acuerdos Financieros</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Información del proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Dividir Activo Fijo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Registro de Asistencia</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Registro de Asistencia</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Incidencia de Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Calendario de RRHH</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Solicitud del Permiso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Generador de Token</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Token para Acceso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Registro de Aplicación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Costos Adicional</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Comisión</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Personalización de Proceso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Personalización de Consulta Inteligente</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Plantilla de Notificación (Por Evento)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Referencia de Adjunto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Definición de Retenciones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Retención Generada</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Retención</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Log de Retención</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Configuración de Retención de I.V.A</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Unidad Tributaria</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configuración de Retención de I.S.L.R</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configuración de Retención Municipal</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Registro de Peso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Material Receipt (Confirmation)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Vehículo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Registro de Peso (Todos)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Orden de Devolución (Cliente)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Orden de Devolución (Proveedor)</strong></p></li>
+</ul>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Compañía Estándar User</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 50%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Compañía Estándar User</p></td>
+<td><p>Organización</p></td>
+<td><p>El rol de compañía estándar user puede crear y generar documentos en estado <strong>Espera Condición de Completar</strong>, <strong>Completar</strong>,
+<strong>Aprobar</strong>, <strong>Rechazar</strong>, <strong>Aplicar</strong>, <strong>Anular</strong>, <strong>Cerrar</strong>, <strong>Reversar-Corregir</strong>, <strong>Reversar-Causación</strong>, <strong>Invalidar</strong>,</p>
+<blockquote>
+<div><p><strong>Reactivar</strong>, <strong>&lt;Ninguno&gt;</strong>, <strong>Preparar</strong>, <strong>Desbloquear</strong>.</p>
+</div></blockquote>
+</td>
+<td><p>No posee un rol incluido por ser el rol estándar con acceso a todo en ADempiere.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Facturas Asignadas a Recepciones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Usuario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Organización</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Localización</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Socio del Negocio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Preferencia</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configurar Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Diario Contable</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Almacén y Ubicaciones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Condición de Pago</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transportista</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Órdenes de Venta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lista de Precios</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Programa de Facturación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Campaña de Mercadeo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Canal de Mercadeo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Región de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Presupuesto Contable</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Banco</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Morosidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Retención (1099)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cargo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Asientos Contables</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Documentos por Cobrar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Inventario Físico</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entregas (Cliente)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Movimiento de Inventario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Reconocimiento de Ingresos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Inventario Perpetuo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Detalles del Proveedor</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Saludo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Órdenes de Compra</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Documentos por Pagar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Recepción de Productos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Definición de EDI</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transacción de EDI</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Producción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Socios del Negocio</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Aviso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estado de Cuentas Bancario</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Pago/Cobro</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Atributo Personalizado</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Caja Chica</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Diario de Caja Chica</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Solicitud</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Plantilla de Correo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Consulta de Asignación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Selección de Pago</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Comisiones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ciclo de Proyecto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Cálculo de Comisiones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Informe Financiero</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Columna de Informe</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Línea de Informe</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Nivel de Servicio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Encontrar (uso indirecto)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transacciones de Materiales (uso indirecto)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Órdenes de Compra Asignadas a Recibos y Facturas</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Esquema de Descuento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Gasto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Informe de Gasto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Recurso</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tipo de Recurso de Manufactura</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Formato de Impresión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Gastos (por Facturar)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Activo Fijo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Grupo de Activo Fijo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entrenamiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Gastos (No Reembolsables)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Transacciones de Balances Contables</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Conjunto de Atributos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lote</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Control de Lote</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Control No. de Serie</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Atributos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Búsqueda de Atributo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Factura de Gastos (Alfa)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Proyecto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Definición de Documento Recurrente</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Anuncio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Hora</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Clic</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Contador Web</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Programa de Pagos de Facturas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Fletes</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Dimensiones Contables</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Proyecto (Orden)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría Conocimiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Base de Conocimiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Inicio Conocimiento</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Sinónimo Conocimiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Información de Socio del Negocio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Información de Agentes de la Compañía</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Documentos sin Aplicar</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Proceso de Flujo de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Registro</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Remesa de Pagos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tema de Subasta</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Vendedor de la Subasta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Comprador de la Subasta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tema de Solicitud para Cotización</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Solicitud para Cotización</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Suscripción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lista de Distribución</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Paquete</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Autorización de Devolución de Cliente</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Cálculo de Morosidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Requisición</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Solicitud para Cotización (Con Respuesta)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ejecutar Distribución</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Acceso al Log</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Pronóstico de Venta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Confirmación Entrega/Recepción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Confirmación de Movimientos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>ANS por Socio del Negocio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Esquema de Lista de Precios</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Inventario uso Interno</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Facturas por Lote</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Costos de Producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>LDM de producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Aviso de Cambio de LDM</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Aviso de Cambio</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Ajuste Instancia de Atributos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Declaración de Impuestos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ver Charla</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Menú de Rol Web POS</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Propiedades Web POS</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cheques con Orden de No Cobro (Web POS)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Recurso de Manufactura</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lista de Materiales y Fórmula</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Datos de Planificación del Producto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Avisos del MRP</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Orden de Manufactura</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Partes de Repuesto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Informe Control de Actividades</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Orden de Distribución</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Especificaciones de Calidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Colector de Costos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Red de Distribución</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Impuestos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Impuestos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo Impuesto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Impuesto Base</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Procesador de Exportación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Procesador de Exportación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Procesador de Importación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Contrato</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Departamento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Puesto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Catálogo de Conceptos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Proceso Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Conceptos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo Lista Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lista Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Histórico de Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Procesamiento de Revaluación de Activos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Índice de Revaluación de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entrada de Transferencia de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entrada de Disposición de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Disposición de Activos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Transferencias de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Entrada para Dividir un Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Construir Archivo de Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Calculo depreciación acumulada</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Construir Pronóstico de Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo Propagación Período Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Métodos de Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tablas de Depreciación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Convenciones Depreciación Primer Año</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Método de Cálculo de Depreciación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Cargo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ver Registros MRP</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Terminal PDV Web</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Flujo de Efectivo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo Promoción</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Promoción</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Definir Cubo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Mis Documentos sin Procesar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Todos los Documentos sin Procesar</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Orden de Salida</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Estructura del Almacén</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Area del Almacén</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Sección del Almacén</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Entradas / Salidas</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Reglas de Entradas / Salidas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estrategia de Entradas / Salidas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Devolución Cliente</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Devolución a Proveedor</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Autorización de Devolución a Proveedor</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Mi Perfil</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Origen de las Órdenes de Venta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo Relación</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Selección de Pago (RRHH)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Retención</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Movimientos de Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Adición de Activos de Fijos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Activación o Disposición de Activo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Asset Change Account</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Asset Class</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Asset Funding Mode</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Revaluation Asset</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Asset Type</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Activos Fijos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Movimientos de Inventario</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Fact Reconciliation</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Producción (Un Solo Producto)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Parts and BOMs</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Lista de Materiales y Fórmulas</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Prueba de Calidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Partes</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Contactos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cliente Potencial</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Etapa de la Venta</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Oportunidad de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tablero de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Clientes</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Importar Flujo de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Product Classification</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Product Class</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Product Group</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Importar Historial de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Calendario de Operaciones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Historico de Ventas</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ejecución simulación del pronóstico</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Regla del Pronóstico</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición del Pronóstico</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Vista de demandas del MRP</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Vista de Suministros del MRP</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Recibos Express</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Análisis de Calidad</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Stocktake (indirect use)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Presupuesto</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>GL Journal</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Turno de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Designación</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Turno</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Grupo de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Nivel de Estudio</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Seguro</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Carrera</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Grado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Estructura Salarial</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Mi Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Habilidad</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tipo de Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Relación de Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Nivel de Profesión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Educación Laboral</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Solicitud de Empleo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Oferta de Trabajo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Rango de Salario</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Empleado (Todos)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Motivo del Permiso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Permiso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tareas pendientes</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Importar atributos del Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Plan de Reabastecimiento</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Concepto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Ordenes de Producción Planeadas</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Importar Datos de Empleado</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Comisión</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Movimiento al Presupuesto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Requisito de Transporte</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Transportistas y Vehículos</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Orden de Flete</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Vehículo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Vehículo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Unidad de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Compartimiento de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Compatibilidad de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Licencia de Transporte</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo de Licencia de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Requisito de Transporte</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Conductor</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>List Type (LVE)</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Grupo de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Clase de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Proyectos</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Categoría del Status de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Diario de Caja</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Caja</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cierre de Caja</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Categoría de Tarea de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Import Project</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Miembro de Proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configuración de Reporte de Nómina</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Funcionalidad Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Categoría de Producto Financiero</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Producto Financiero</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Acuerdo Financiero</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tipo de Acuerdo Financiero</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Estado de Inversión o Préstamo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Cuenta Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Lote de Transacción Financiera</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Transacción Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tasa Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Préstamo</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Morosidad de Préstamo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Tipo de Transacción Financiera</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Acuerdos Financieros</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Información del proyecto</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Dividir Activo Fijo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Registro de Asistencia</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Importar Registro de Asistencia</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Incidencia de Nómina</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Calendario de RRHH</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Solicitud del Permiso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Tipo de Costos Adicional</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Definición de Retenciones</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Retención Generada</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Tipo de Retención</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Log de Retención</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configuración de Retención de I.V.A</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Configuración de Retención de I.S.L.R</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>Configuración de Retención Municipal</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Registro de Peso</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Material Receipt (Confirmation)</strong></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p><strong>Grupo de Vehículo</strong></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>Registro de Peso (Todos)</strong></p></li>
+</ul>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Gerencia</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe Autogestión</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Almacén</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Cobranza</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Compras</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Contabilidad</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Control de Calidad</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de CxC</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de CxP</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Fábrica</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Logística</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Nómina</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Producción</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Reclutamiento</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Recursos Humanos</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Romana</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Tesorería</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Jefe de Ventas</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Role Template</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>System Administrator</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 61%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Rol</strong></p></td>
+<td><p><strong>Nivel de Usuario</strong></p></td>
+<td><p><strong>Acceso de Acción de Documento</strong></p></td>
+<td><p><strong>Roles Incluídos</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, ADempiere ERP
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: 
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+       <strong> <dd><a href="/master/">latest</a></dd>
+        <dd><a href="/4.0.0/">4.0.0</a></dd>
+        <dd><a href="/adempiere-3.7/">ADempiere-3.7</a></dd> </strong> 
+       
+      </dl>
+     
+    <hr/>
+    
+ 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

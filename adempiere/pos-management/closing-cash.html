@@ -1,0 +1,523 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>8.9. Cierre de Caja del Punto de Venta &mdash; ERPYA 1.0 Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9. Gestión de Compras" href="../requisition-to-invoice/index.html" />
+    <link rel="prev" title="8.8. Retiro de Fondos de Punto de Venta" href="withdrawal-of-funds-from-the-point-of-sale.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> ERPYA
+          
+
+          
+            
+            <img src="../../_static/ERP_Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+<h2>Tabla de Contenido</h2>
+
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN ESTÁNDAR</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/standard-procedures/index.html"><strong>Procedimientos Estándares</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/openproject/index.html">1. <strong>Open Project</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/slack/index.html">2. <strong>Slack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/rst/index.html">3. <strong>Herramienta RestructuredText</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../basic-steps/index.html">1. <strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../master/index.html">2. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quality-management/index.html">3. <strong>Gestión de Calidad</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-management/index.html">4. <strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../production-management/index.html">5. <strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../distribution-management/index.html">6. <strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quote-to-invoice/index.html">7. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">8. <strong>Gestión PDV</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="point-of-sale-terminal.html">8.1. <strong>Configuración de Terminal PDV</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="opening-cash.html">8.2. <strong>Apertura de Caja</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="point-of-sale-interface.html">8.3. <strong>Interfaz de Punto de Venta</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pos.html">8.4. <strong>Toma de Pedido</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="void-sales-transaction.html">8.5. <strong>Anular Transacción de Venta</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="create-new-return-order.html">8.6. <strong>Crear Nueva Orden de Devolución</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="complete-ready-order.html">8.7. <strong>Completar Orden Preparada</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="withdrawal-of-funds-from-the-point-of-sale.html">8.8. <strong>Retiro de Fondos de Punto de Venta</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8.9. <strong>Cierre de Caja del Punto de Venta</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#consultar-registro-en-cierre-de-caja">8.9.1. <strong>Consultar Registro en Cierre de Caja</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#completar-registro-en-cierre-de-caja">8.9.2. <strong>Completar Registro en Cierre de Caja</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requisition-to-invoice/index.html">9. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../returns/index.html">10. <strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-items/index.html">11. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../loan-management/index.html">12. <strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../human-resources-management/index.html">13. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../asset-management/index.html">14. <strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance-analysis/index.html">15. <strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/document-utility/index.html">1. <strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/fiscal-printer/index.html">2. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/procedures/index.html">3. <strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/report/index.html">4. <strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+</ul>
+
+            
+          
+<h2>Otros</h2>
+<ul>
+<li><a href="../../contributing.html"></a></li>
+</ul>
+
+<h2>Para Mayor Información</h2>
+<ul>
+<li><a href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a></li>
+<li><a href="https://github.com/erpcya/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Download Docs</a></li>
+</ul>
+
+<ul class="ethical-sidebar">
+    <li>
+        <a class="ethical-content" href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                <img src="https://assets.readthedocs.org/sustainability/readthedocs-logo-fs8.png">
+        </a>
+        
+        <li>
+            <a href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                Repositorios Privados y Soporte Prioritario!
+                
+                <br \>
+                    
+                Intenta leer los documentos para negocios hoy!
+                            
+            </a>
+        </li>
+    </li>
+</ul>
+
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ERPYA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html"><span class="section-number">8. </span><strong>Gestión PDV</strong></a> &raquo;</li>
+        
+      <li><span class="section-number">8.9. </span><strong>Cierre de Caja del Punto de Venta</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/adempiere/pos-management/closing-cash.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cierre-de-caja-del-punto-de-venta">
+<span id="documento-cierre-de-caja-punto-de-venta"></span><h1><span class="section-number">8.9. </span><strong>Cierre de Caja del Punto de Venta</strong><a class="headerlink" href="#cierre-de-caja-del-punto-de-venta" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Ventas</strong>”, luego seleccione la carpeta “<strong>Órdenes de Venta</strong>”, por último seleccione la carpeta “<strong>Punto de Venta</strong>”. Para finalizar, seleccione la ventana “<strong>Punto de Venta</strong>”.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere" src="../../_images/point-of-sale-menu.png" /></p>
+<p>Imagen 1. Menú de ADempiere</p>
+</div></blockquote>
+</li>
+<li><p>Luego de realizar desde el punto de venta todas las tomas de pedido del día, seleccione la opción “<strong>Cerrar Caja del Punto de Venta</strong>”, ubicada en el menú desplegado por el icono “<strong>Proceso</strong>” de la barra de herramientas de la ventana “<strong>Punto de Venta</strong>”, explicada en el documento <a class="reference internal" href="point-of-sale-interface.html#documento-paso-barra-de-herramientas"><span class="std std-ref">Barra de Herramientas del Punto de Venta</span></a> elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>.</p>
+<blockquote>
+<div><p><img alt="Opción Cerrar Caja del Punto de Venta" src="../../_images/option-close-point-of-sale-box.png" /></p>
+<p>Imagen 2. Opción Cerrar Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>Podrá visualizar la ventana “<strong>Cerrar Caja del Punto de Venta</strong>”, con diferentes campos que permiten filtrar la búsqueda de información según lo requerido por el socio del negocio vendedor que esta realizando el cierre de caja.</p>
+<blockquote>
+<div><p><img alt="Ventana Cierre de Caja del Punto de Venta" src="../../_images/point-of-sale-box-closing-window.png" /></p>
+<p>Imagen 3. Ventana Cierre de Caja del Punto de Venta</p>
+<ol class="arabic">
+<li><p>En el campo “<strong>Terminal PDV</strong>”, podrá visualizar el terminal configurado para el socio del negocio vendedor.</p>
+<blockquote>
+<div><p><img alt="Campo Terminal PDV del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/pos-terminal-search-filter-field-field-close-checkout-window.png" /></p>
+<p>Imagen 4. Campo Terminal PDV del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>En el campo “<strong>Cuenta Bancaria</strong>”, podrá visualizar la cuenta caja asociada al socio del negocio vendedor en la configuración del terminal PDV.</p>
+<blockquote>
+<div><p><img alt="Campo Cuenta Bancaria del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/bank-account-field-of-the-search-filter-of-the-cash-register-window-of-the-point-of-sale.png" /></p>
+<p>Imagen 5. Campo Cuenta Bancaria del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Fecha de la Transacción</strong>”, el rango de fecha en el cual fue realizada la toma de pedido por medio del punto de venta.</p>
+<blockquote>
+<div><p><img alt="Campo Fecha de la Transacción del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/transaction-date-field-of-the-search-filter-of-the-point-of-sale-checkout-window.png" /></p>
+<p>Imagen 6. Campo Fecha de la Transacción del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Tipo de Licitación</strong>”, el tipo de pago por el cual requiere filtrar las tomas de pedido realizadas.</p>
+<blockquote>
+<div><p><img alt="Campo Tipo de Pago del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/payment-type-field-of-the-point-of-sale-window-closing-box-filter.png" /></p>
+<p>Imagen 7. Campo Tipo de Licitación del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>Indique en el campo “<strong>Cobros</strong>”, si las tomas de pedido realizadas fueron cobradas o no.</p>
+<blockquote>
+<div><p><img alt="Campo Cobros del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/charges-field-of-the-search-filter-of-the-window-closing-box-of-the-point-of-sale.png" /></p>
+<p>Imagen 8. Campo Cobros del Filtro de Búsqueda de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione la opción “<strong>Comenzar Búsqueda</strong>”, para realizar la búsqueda de todas las tomas de pedido realizadas por el socio del negocio vendedor, según lo seleccionado en los campos anteriormente explicados.</p>
+<blockquote>
+<div><p><img alt="Opción Comenzar Búsqueda para Filtrar la Búsqueda de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/option-start-search-to-filter-the-search-of-the-point-of-sale-box-closing-window.png" /></p>
+<p>Imagen 9. Opción Comenzar Búsqueda para Filtrar la Búsqueda de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>Podrá visualizar el listado de todos los cobros realizados por las órdenes de ventas POS generadas desde el punto de venta. Así como también, las transacciones de apertura y retiros de fondos que se realicen en la caja durante el día, para realizar el cierre de caja debe seleccionar todos los registros de transacciones que contiene la misma.</p>
+<blockquote>
+<div><p><img alt="Listado de Todos los Cobros Realizados por las Órdenes de Ventas del Punto de Venta" src="../../_images/listing-of-all-collections-made-by-sales-orders-from-the-point-of-sale.png" /></p>
+<p>Imagen 10. Listado de Todos los Cobros Realizados por las Órdenes de Ventas del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>En el grupo de campos “<strong>Parámetros</strong>”, podrá visualizar los siguientes campos:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>En el campo “<strong>Terminal PDV</strong>”, podrá visualizar el terminal configurado para el socio del negocio vendedor.</p>
+<blockquote>
+<div><p><img alt="Campo Terminal PDV de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/pos-terminal-window-field-pos-box-closure.png" /></p>
+<p>Imagen 11. Campo Terminal PDV de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>En el campo “<strong>Cuenta Bancaria</strong>”, podrá visualizar la cuenta caja asociada al socio del negocio vendedor en la configuración del terminal PDV.</p>
+<blockquote>
+<div><p><img alt="Campo Cuenta Bancaria de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/bank-account-field-of-the-point-of-sale-cashier-window.png" /></p>
+<p>Imagen 12. Campo Cuenta Bancaria de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>En el campo “<strong>Fecha de la Transacción</strong>”, el rango de fecha en el cual fue realizada la toma de pedido por medio del punto de venta.</p>
+<blockquote>
+<div><p><img alt="Campo Fecha de la Transacción de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/transaction-date-field-of-the-point-of-sale-cash-closing-window.png" /></p>
+<p>Imagen 13. Campo Fecha de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>En el campo “<strong>Total de la Línea</strong>”, la cantidad total de la línea con impuestos incluidos.</p>
+<blockquote>
+<div><p><img alt="Campo Total de la Línea de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/total-field-of-the-line-of-the-point-of-sale-cashier-window.png" /></p>
+<p>Imagen 14. Campo Total de la Línea de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>En el campo “<strong>Total Pagado</strong>”, la monto total pagado de las órdenes de venta realizadas desde el punto de venta.</p>
+<blockquote>
+<div><p><img alt="Campo Total Pagado de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/total-paid-field-of-the-point-of-sale-cashier-closing-window.png" /></p>
+<p>Imagen 15. Campo Total Pagado de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>En el campo “<strong>Total Abierto</strong>”, el monto total abierto de las órdenes de venta realizadas desde el punto de venta.</p>
+<blockquote>
+<div><p><img alt="Campo Total Abierto de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/full-window-open-field-cashier-point-of-sale.png" /></p>
+<p>Imagen 16. Campo Total Abierto de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+<li><p>En el campo “<strong>Diferencia Monto</strong>”, podrá visualizar la diferencia del monto existente entre el retiro y el resultado del total pagado menos el total de la línea.</p>
+<blockquote>
+<div><p><img alt="Campo Diferencia Monto de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/field-difference-amount-of-window-closing-cash-point-of-sale.png" /></p>
+<p>Imagen 17. Campo Diferencia Monto de la Ventana Cierre de Caja del Punto de Venta</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El valor de este campo proviene de la fórmula (Total Retiro en Cierre de Caja + (Total Pagado - Total de la Línea)).</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Tilde el checklist “<strong>Sobre/Sub Pago</strong>”, para indicar que existe un sobre pago (no contabilizado) o un sub pago (pago parcial).</p>
+<blockquote>
+<div><p><img alt="Checklist Sobre Sub Pago de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/checklist-about-sub-payment-of-the-window-cashier-closing-of-the-point-of-sale.png" /></p>
+<p>Imagen 18. Checklist Sobre/Sub Pago de la Ventana Cierre de Caja del Punto de Venta</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si el punto de venta tuvo pagos de más (Sobre) o de menos (Sub), ADempiere calcula la diferencia. Para el caso expuesto en el presente material, no es necesario seleccionar el checklist.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Cargo</strong>”, el cargo correspondiente al cierre de caja que se encuentra realizando desde el punto de venta.</p>
+<blockquote>
+<div><p><img alt="Campo Cargo de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/field-charge-of-the-point-of-sale-cashier-window.png" /></p>
+<p>Imagen 19. Campo Cargo de la Ventana Cierre de Caja del Punto de Venta</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cuando existen pagos de más (Sobre) o de menos (Sub), se selecciona un cargo y ADempiere genera una linea en el cierre contra el cargo seleccionado, permitiendo cuadrar la caja del día. Para el caso expuesto en el presente material, no es necesario seleccionar ningún cargo.</p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Seleccione la opción “<strong>OK</strong>”, para realizar el cierre de caja del punto de venta con los cobros seleccionados y generar el documento pertinente en la ventana “<strong>Cierre de Caja</strong>”.</p>
+<blockquote>
+<div><p><img alt="Opción OK de la Ventana Cierre de Caja del Punto de Venta" src="../../_images/ok-option-of-the-point-of-sale-cashier-window.png" /></p>
+<p>Imagen 20. Opción OK de la Ventana Cierre de Caja del Punto de Venta</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<div class="section" id="consultar-registro-en-cierre-de-caja">
+<h2><span class="section-number">8.9.1. </span><strong>Consultar Registro en Cierre de Caja</strong><a class="headerlink" href="#consultar-registro-en-cierre-de-caja" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Al ejecutar el proceso “<strong>Cerrar de Caja del Punto de Venta</strong>”, se completa el registro con la cuenta “<strong>Caja 04</strong>”, creado en la ventana “<strong>Cierre de Caja</strong>”, llevando la misma a cero (0) nuevamente.</p>
+<blockquote>
+<div><p><img alt="Cierre de Caja 04 Completada" src="../../_images/box-closure-04-completed.png" /></p>
+<p>Imagen 21. Cierre de Caja 04 Completada</p>
+</div></blockquote>
+</li>
+<li><p>Podrá visualizar en la pestaña “<strong>Línea de Cierre de Caja</strong>”, los registros que fueron creados automáticamente a lo largo del día según las transacciones que fueron realizadas en la caja. Basicamente estos son:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Apertura</strong>: Crea el registro de cierre de caja (Caja 04), asociando en la línea del mismo el documento de ingreso generado en caja.</p></li>
+<li><p><strong>Cobros</strong>: Crea en la línea de cierre de caja (Caja 04), un registro por cada documento de cobro generado en caja, asociando el documento a la línea.</p></li>
+<li><p><strong>Retiro de Fondos</strong>: Crea en la línea de cierre de caja (Caja 04), un registro por cada documento de egreso generado en caja, asociando el documento a la línea.</p></li>
+</ul>
+<p><img alt="Pestaña Línea de Cierre de Caja 04 Completada" src="../../_images/box-closing-line-tab-04-completed.png" /></p>
+<p>Imagen 22. Pestaña Línea de Cierre de Caja 04 Completada</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="completar-registro-en-cierre-de-caja">
+<h2><span class="section-number">8.9.2. </span><strong>Completar Registro en Cierre de Caja</strong><a class="headerlink" href="#completar-registro-en-cierre-de-caja" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Ubique el registro de la “<strong>Caja Administrativa</strong>” generado en la ventna “<strong>Cierre de Caja</strong>”, el cual se encuentra en estado “<strong>Borrador</strong>”.</p>
+<blockquote>
+<div><p><img alt="Cierre de Caja Administrativa en Borrador" src="../../_images/draft-administrative-box-closure.png" /></p>
+<p>Imagen 23. Cierre de Caja Administrativa en Estado Borrador</p>
+</div></blockquote>
+</li>
+<li><p>Al seleccionar la pestaña “<strong>Línea de Cierre de Caja</strong>”, podrá visualizar las líneas creadas con los registros asociados de apertura y retiro, ejecutados a lo largo del proceso de punto de venta.</p>
+<blockquote>
+<div><p><img alt="Pestaña Línea de Cierre de Caja Administrativa en Borrador" src="../../_images/draft-administrative-box-closing-line-tab.png" /></p>
+<p>Imagen 24. Pestaña Línea de Cierre de Caja</p>
+</div></blockquote>
+</li>
+<li><p>Regrese a la pestaña principal “<strong>Cierre de Caja</strong>”, para ejecutar el cierre de la misma.</p>
+<blockquote>
+<div><p><img alt="Pestaña Principal Cierre de Caja" src="../../_images/cash-close-main-tab.png" /></p>
+<p>Imagen 25. Pestaña Principal Cierre de Caja</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione la opción “<strong>Completar</strong>”, para completar el cierre de caja de la “<strong>Caja Administrativa</strong>”.</p>
+<blockquote>
+<div><p><img alt="Opción Completar del Cierre de Caja Administrativa" src="../../_images/complete-administrative-cash-closure-option.png" /></p>
+<p>Imagen 26. Opción Completar del Cierre de Caja</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione la acción “<strong>Completar</strong>” y la opción “<strong>OK</strong>”, para completar el registro.</p>
+<blockquote>
+<div><p><img alt="Acción Completar y Opción OK del Cierre de Caja" src="../../_images/action-complete-and-cash-close-option-ok.png" /></p>
+<p>Imagen 27. Acción Completar y Opción OK del Cierre de Caja</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../requisition-to-invoice/index.html" class="btn btn-neutral float-right" title="9. Gestión de Compras" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="withdrawal-of-funds-from-the-point-of-sale.html" class="btn btn-neutral float-left" title="8.8. Retiro de Fondos de Punto de Venta" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, ADempiere ERP
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: 
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+       <strong> <dd><a href="/master/">latest</a></dd>
+        <dd><a href="/4.0.0/">4.0.0</a></dd>
+        <dd><a href="/adempiere-3.7/">ADempiere-3.7</a></dd> </strong> 
+       
+      </dl>
+     
+    <hr/>
+    
+ 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
