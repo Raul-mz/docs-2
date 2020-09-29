@@ -8,7 +8,7 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = _build
 SPHINXPROJ    = Docs
-SOURCEDIR     = src
+SOURCEDIR     = .
 
 
 # User-friendly check for sphinx-build
@@ -52,11 +52,13 @@ help:
 
 clean:
 	rm -rf $(BUILDDIR)/*
+%: Makefile
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html/
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+#html:
+#	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html/
+#	@echo
+#	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 rinoh:
 	$(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf/
 	@echo
